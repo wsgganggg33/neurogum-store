@@ -217,6 +217,48 @@
         "show_text_below": true
       }
     },
+    "video_slider_with_text_CUtHT4": {
+      "type": "video-slider-with-text",
+      "blocks": {
+        "text_q3tT88": {
+          "type": "text",
+          "settings": {
+            "range": 51,
+            "text": "<p><strong>felt more alert within minutes </strong>Reported faster mental clarity and sharper concentration.</p>"
+          }
+        },
+        "text_JhkiBi": {
+          "type": "text",
+          "settings": {
+            "range": 50,
+            "text": ""
+          }
+        },
+        "text_gQA8yC": {
+          "type": "text",
+          "settings": {
+            "range": 50,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_q3tT88",
+        "text_JhkiBi",
+        "text_gQA8yC"
+      ],
+      "name": "Product Video Slider",
+      "settings": {
+        "title": "⚡ Sharper Focus. Cleaner Energy. Zero Crash",
+        "text": "Designed for performance. Powered by peppermint.",
+        "button_txt": "",
+        "button_link": "",
+        "colr-bg": "",
+        "btn-color": "",
+        "btn-txt-color": "",
+        "icon": "#ffffff"
+      }
+    },
     "4536657b-07aa-4787-922f-be0de52afe9c": {
       "type": "image-with-text-2",
       "disabled": true,
@@ -293,6 +335,7 @@
         "column_7tbqQj",
         "column_xYHw6p"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h2",
@@ -580,6 +623,7 @@
     "main",
     "video_slider_with_text_mbB8b4",
     "image_banner_Pwd4kB",
+    "video_slider_with_text_CUtHT4",
     "4536657b-07aa-4787-922f-be0de52afe9c",
     "image_banner_H9TggN",
     "8bb65be9-da27-4363-93a6-7ef4f50d53a3",
