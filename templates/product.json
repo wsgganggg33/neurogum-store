@@ -230,54 +230,6 @@
         "btn-txt-color": "#ffffff"
       }
     },
-    "image_banner_hBni6G": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "image_banner_QcNdmN": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "image_banner_eX4cre": {
-      "type": "image-banner",
-      "name": "t:sections.image-banner.presets.name",
-      "settings": {
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "image_banner_H9TggN": {
       "type": "image-banner",
       "disabled": true,
@@ -629,9 +581,6 @@
     "video_slider_with_text_mbB8b4",
     "image_banner_Pwd4kB",
     "4536657b-07aa-4787-922f-be0de52afe9c",
-    "image_banner_hBni6G",
-    "image_banner_QcNdmN",
-    "image_banner_eX4cre",
     "image_banner_H9TggN",
     "8bb65be9-da27-4363-93a6-7ef4f50d53a3",
     "sale_compare_eayVKd",
