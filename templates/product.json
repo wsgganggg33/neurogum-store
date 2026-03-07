@@ -145,43 +145,48 @@
     "video_slider_with_text_mbB8b4": {
       "type": "video-slider-with-text",
       "blocks": {
-        "video_yTGHYp": {
+        "video_RJniBy": {
           "type": "video",
           "settings": {
+            "image": "shopify://shop_images/1.jpg",
             "video_link": "https://cdn.shopify.com/videos/c/o/v/66785a8fb1b145c5a9bc8eb323da4503.mp4"
           }
         },
-        "video_mjDh6H": {
+        "video_WQyQtN": {
           "type": "video",
           "settings": {
-            "video_link": "https://cdn.shopify.com/videos/c/o/v/22b482c729824bb78620b5ee428529f6.mp4"
+            "image": "shopify://shop_images/2.jpg",
+            "video_link": "https://cdn.shopify.com/s/files/1/0992/2972/9082/files/4.webp?v=1772924373"
           }
         },
-        "video_eEMRwR": {
+        "video_r8QLGH": {
           "type": "video",
           "settings": {
-            "video_link": "https://cdn.shopify.com/videos/c/o/v/c1e0fc8e2009409d8170055cb4d5b675.mp4"
-          }
-        },
-        "video_JpCLzV": {
-          "type": "video",
-          "settings": {
-            "video_link": "https://cdn.shopify.com/videos/c/o/v/22965b170d1143039bd630ced7683c6a.mp4"
-          }
-        },
-        "video_JCpGh4": {
-          "type": "video",
-          "settings": {
+            "image": "shopify://shop_images/3.jpg",
             "video_link": "https://cdn.shopify.com/videos/c/o/v/682dfb2c1d8045caa240fe4b93d99227.mp4"
+          }
+        },
+        "video_pLydVq": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/4.jpg",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/9ab76cf7e2814517b2c517fef4f2314d.mp4"
+          }
+        },
+        "video_fbKmJx": {
+          "type": "video",
+          "settings": {
+            "image": "shopify://shop_images/5.jpg",
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/c1e0fc8e2009409d8170055cb4d5b675.mp4"
           }
         }
       },
       "block_order": [
-        "video_yTGHYp",
-        "video_mjDh6H",
-        "video_eEMRwR",
-        "video_JpCLzV",
-        "video_JCpGh4"
+        "video_RJniBy",
+        "video_WQyQtN",
+        "video_r8QLGH",
+        "video_pLydVq",
+        "video_fbKmJx"
       ],
       "name": "Product Video Slider",
       "settings": {
