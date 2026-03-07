@@ -1,0 +1,145 @@
+.neuro-polaroid-section {
+    position: relative;
+    padding: 80px 20px;
+    overflow: hidden;
+}
+
+.neuro-polaroid-section__wave {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    line-height: 0;
+    z-index: 1;
+}
+
+.neuro-polaroid-section__wave--top {
+    top: -1px;
+}
+
+.neuro-polaroid-section__wave--bottom {
+    bottom: -1px;
+}
+
+.neuro-polaroid-section__wave svg {
+    width: 100%;
+    height: 60px;
+    display: block;
+}
+
+.neuro-polaroid-section__heading {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 800;
+    margin: 0 0 50px 0;
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+}
+
+.neuro-polaroid-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.neuro-polaroid-card {
+    background: #ffffff;
+    padding: 12px 12px 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15), 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    width: 240px;
+    flex-shrink: 0;
+}
+
+.neuro-polaroid-card:hover {
+    transform: rotate(0deg) scale(1.05) !important;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+.neuro-polaroid-card__tape {
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-2deg);
+    width: 60px;
+    height: 22px;
+    opacity: 0.7;
+    border-radius: 2px;
+    z-index: 3;
+}
+
+.neuro-polaroid-card__inner {
+    width: 100%;
+}
+
+.neuro-polaroid-card__image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 2px;
+}
+
+.neuro-polaroid-card__placeholder {
+    width: 100%;
+    height: 220px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.neuro-polaroid-card__placeholder svg {
+    width: 60px;
+    height: 60px;
+    opacity: 0.3;
+}
+
+.neuro-polaroid-card__caption {
+    font-size: 0.95rem;
+    font-weight: 600;
+    margin: 12px 0 0;
+    text-align: center;
+    line-height: 1.3;
+}
+
+@media screen and (max-width: 749px) {
+    .neuro-polaroid-section {
+        padding: 60px 16px;
+    }
+
+    .neuro-polaroid-section__heading {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+    }
+
+    .neuro-polaroid-cards {
+        gap: 20px;
+    }
+
+    .neuro-polaroid-card {
+        width: calc(50% - 14px);
+        padding: 8px 8px 14px;
+    }
+
+    .neuro-polaroid-card__image {
+        height: 160px;
+    }
+
+    .neuro-polaroid-card__caption {
+        font-size: 0.8rem;
+    }
+
+    .neuro-polaroid-card__tape {
+        width: 40px;
+        height: 16px;
+        top: -6px;
+    }
+}

@@ -1,0 +1,117 @@
+{{ 'neuro-cta-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="neuro-cta-banner" style="background-color: {{ section.settings.bg_color }};">
+  <div class="neuro-cta-banner__container">
+    <div class="neuro-cta-banner__text">
+      {%- if section.settings.heading_line_1 != blank -%}
+        <h2 class="neuro-cta-banner__heading-line1" style="color: {{ section.settings.heading_color }};">
+          {{ section.settings.heading_line_1 }}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.heading_line_2 != blank -%}
+        <h2 class="neuro-cta-banner__heading-line2" style="color: {{ section.settings.accent_color }};">
+          {{ section.settings.heading_line_2 }}
+        </h2>
+      {%- endif -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="neuro-cta-banner__subheading" style="color: {{ section.settings.heading_color }};">
+          {{ section.settings.subheading }}
+        </p>
+      {%- endif -%}
+      {%- if section.settings.button_label != blank -%}
+        <a href="{{ section.settings.button_link }}" class="neuro-cta-banner__button" style="background-color: {{ section.settings.button_bg }}; color: {{ section.settings.button_text_color }};">
+          {{ section.settings.button_label }}
+        </a>
+      {%- endif -%}
+    </div>
+    <div class="neuro-cta-banner__image-wrapper">
+      {%- if section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 800 | image_tag:
+          class: 'neuro-cta-banner__image',
+          loading: 'lazy',
+          widths: '375, 550, 750, 800',
+          sizes: '(max-width: 749px) 100vw, 50vw'
+        }}
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "CTA Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_line_1",
+      "label": "Heading Line 1",
+      "default": "Tackle it all by"
+    },
+    {
+      "type": "text",
+      "id": "heading_line_2",
+      "label": "Heading Line 2 (Accent)",
+      "default": "popping a Neuro..."
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "And you're good to go!"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#1a0a4a"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent Color",
+      "default": "#00BCD4"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#f0faf9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "Shop Now"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "button_bg",
+      "label": "Button Background",
+      "default": "#00BCD4"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "CTA Banner"
+    }
+  ]
+}
+{% endschema %}

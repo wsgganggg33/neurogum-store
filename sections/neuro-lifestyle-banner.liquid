@@ -1,0 +1,175 @@
+{{ 'neuro-lifestyle-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="neuro-lifestyle-banner" style="background-color: {{ section.settings.bg_color }};">
+  {%- if section.settings.image != blank -%}
+    <div class="neuro-lifestyle-banner__image-wrapper">
+      {{ section.settings.image | image_url: width: 1920 | image_tag:
+        class: 'neuro-lifestyle-banner__image',
+        loading: 'lazy',
+        widths: '375, 550, 750, 1100, 1500, 1920',
+        sizes: '100vw'
+      }}
+      <div class="neuro-lifestyle-banner__overlay" style="background-color: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+    </div>
+  {%- endif -%}
+
+  {%- if section.settings.mobile_image != blank -%}
+    <div class="neuro-lifestyle-banner__image-wrapper neuro-lifestyle-banner__image-wrapper--mobile">
+      {{ section.settings.mobile_image | image_url: width: 750 | image_tag:
+        class: 'neuro-lifestyle-banner__image',
+        loading: 'lazy',
+        widths: '375, 550, 750',
+        sizes: '100vw'
+      }}
+      <div class="neuro-lifestyle-banner__overlay" style="background-color: {{ section.settings.overlay_color }}; opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};"></div>
+    </div>
+  {%- endif -%}
+
+  <div class="neuro-lifestyle-banner__content" style="text-align: {{ section.settings.text_alignment }};">
+    {%- if section.settings.top_text != blank -%}
+      <span class="neuro-lifestyle-banner__top-text" style="color: {{ section.settings.top_text_color }};">{{ section.settings.top_text }}</span>
+    {%- endif -%}
+
+    {%- if section.settings.heading != blank -%}
+      <h2 class="neuro-lifestyle-banner__heading" style="color: {{ section.settings.heading_color }}; font-size: {{ section.settings.heading_size_desktop }}px;">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="neuro-lifestyle-banner__subheading" style="color: {{ section.settings.subheading_color }};">{{ section.settings.subheading }}</p>
+    {%- endif -%}
+
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link }}" class="neuro-lifestyle-banner__button" style="background-color: {{ section.settings.button_bg_color }}; color: {{ section.settings.button_text_color }};">
+        {{ section.settings.button_label }}
+      </a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Lifestyle Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Desktop Banner Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Mobile Banner Image"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#00BCD4"
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Image Overlay Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 0,
+      "unit": "%"
+    },
+    {
+      "type": "text",
+      "id": "top_text",
+      "label": "Top Text",
+      "default": "NEURO FOR GOALS"
+    },
+    {
+      "type": "color",
+      "id": "top_text_color",
+      "label": "Top Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "DO MORE"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "label": "Heading Size (Desktop)",
+      "min": 24,
+      "max": 160,
+      "step": 4,
+      "default": 120,
+      "unit": "px"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "When do you need more focus and energy?"
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#1a0a4a"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Lifestyle Banner"
+    }
+  ]
+}
+{% endschema %}

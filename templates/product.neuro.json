@@ -1,0 +1,420 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "shipping-txt": "",
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "icon_with_text": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Free Shipping",
+            "icon_2": "return",
+            "heading_2": "Money Back Guarantee",
+            "icon_3": "heart",
+            "heading_3": "Sugar Free & Vegan"
+          }
+        },
+        "shipping_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping Information",
+            "icon": "truck",
+            "content": "<p>Free shipping on all orders. Delivery within 5-7 business days.</p>",
+            "page": ""
+          }
+        },
+        "ingredients_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "leaf",
+            "content": "<p><strong>Active Ingredients:</strong> Natural Caffeine (40mg), L-theanine (60mg), Vitamin B6, Vitamin B12</p><p><strong>Other Ingredients:</strong> Sorbitol, Natural Flavors, Gum Base, Magnesium Stearate</p><p>Sugar Free • Gluten Free • Vegan • Aspartame Free</p>",
+            "page": ""
+          }
+        },
+        "return_tab": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return & Refund Policy",
+            "icon": "return",
+            "content": "<p>We offer a 30-day money back guarantee. If you're not satisfied, contact us for a full refund.</p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "icon_with_text",
+        "shipping_tab",
+        "ingredients_tab",
+        "return_tab"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "lifestyle_banner": {
+      "type": "neuro-lifestyle-banner",
+      "settings": {
+        "bg_color": "#00BCD4",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "top_text": "NEURO FOR GOALS",
+        "top_text_color": "#ffffff",
+        "heading": "DO MORE",
+        "heading_color": "#ffffff",
+        "heading_size_desktop": 120,
+        "subheading": "",
+        "subheading_color": "#ffffff",
+        "text_alignment": "center",
+        "button_label": "",
+        "button_bg_color": "#ffffff",
+        "button_text_color": "#1a0a4a"
+      }
+    },
+    "polaroid_cards": {
+      "type": "neuro-polaroid-cards",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "caption": "Staying focused on long drives",
+            "rotation": -5,
+            "tape_color": "#a8e6cf"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "caption": "To be productive and at your best in office",
+            "rotation": 3,
+            "tape_color": "#a8e6cf"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "caption": "Crushing it at the gym",
+            "rotation": -2,
+            "tape_color": "#a8e6cf"
+          }
+        },
+        "card_4": {
+          "type": "card",
+          "settings": {
+            "caption": "Staying sharp while studying",
+            "rotation": 4,
+            "tape_color": "#a8e6cf"
+          }
+        }
+      },
+      "block_order": ["card_1", "card_2", "card_3", "card_4"],
+      "settings": {
+        "heading": "When do you need more focus and energy?",
+        "heading_color": "#ffffff",
+        "bg_color": "#00BCD4",
+        "caption_color": "#1a1a2e",
+        "wave_top": true,
+        "wave_bottom": true,
+        "wave_color": "#ffffff"
+      }
+    },
+    "cta_banner": {
+      "type": "neuro-cta-banner",
+      "settings": {
+        "heading_line_1": "Tackle it all by",
+        "heading_line_2": "popping a Neuro...",
+        "subheading": "And you're good to go!",
+        "heading_color": "#1a0a4a",
+        "accent_color": "#00BCD4",
+        "bg_color": "#f0faf9",
+        "button_label": "Shop Now",
+        "button_bg": "#00BCD4",
+        "button_text_color": "#ffffff"
+      }
+    },
+    "video_slider": {
+      "type": "video-slider-with-text",
+      "blocks": {
+        "video_1": {
+          "type": "video",
+          "settings": {
+            "video_link": ""
+          }
+        },
+        "video_2": {
+          "type": "video",
+          "settings": {
+            "video_link": ""
+          }
+        },
+        "video_3": {
+          "type": "video",
+          "settings": {
+            "video_link": ""
+          }
+        }
+      },
+      "block_order": ["video_1", "video_2", "video_3"],
+      "settings": {
+        "title": "Neuro is loved all around the world",
+        "text": "",
+        "button_txt": "",
+        "button_link": "",
+        "colr-bg": "#ffffff",
+        "btn-color": "",
+        "btn-txt-color": "",
+        "icon": "#1a0a4a"
+      }
+    },
+    "ingredients": {
+      "type": "neuro-ingredients",
+      "blocks": {
+        "ingredient_1": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Natural Caffeine (40mg)",
+            "description": "Clean, balanced energy boost",
+            "card_bg": "#ffffff",
+            "name_color": "#1a0a4a",
+            "desc_color": "#666666"
+          }
+        },
+        "ingredient_2": {
+          "type": "ingredient",
+          "settings": {
+            "name": "L-theanine (60mg)",
+            "description": "Reduces negative side-effects of caffeine while reducing stress",
+            "card_bg": "#ffffff",
+            "name_color": "#1a0a4a",
+            "desc_color": "#666666"
+          }
+        },
+        "ingredient_3": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B6 (41% DV)",
+            "description": "Regulated mood and helps with stress",
+            "card_bg": "#ffffff",
+            "name_color": "#1a0a4a",
+            "desc_color": "#666666"
+          }
+        },
+        "ingredient_4": {
+          "type": "ingredient",
+          "settings": {
+            "name": "Vitamin B12 (100% DV)",
+            "description": "Gives energy while boosting mood",
+            "card_bg": "#ffffff",
+            "name_color": "#1a0a4a",
+            "desc_color": "#666666"
+          }
+        },
+        "comparison_1": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "L-theanine",
+            "neuro_value": "60mg for a smooth boost",
+            "other_1_value": "Only caffeine",
+            "other_2_value": "Only caffeine"
+          }
+        },
+        "comparison_2": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Sugar",
+            "neuro_value": "0mg",
+            "other_1_value": "37g",
+            "other_2_value": "46g"
+          }
+        },
+        "comparison_3": {
+          "type": "comparison_row",
+          "settings": {
+            "feature": "Calories",
+            "neuro_value": "0",
+            "other_1_value": "50",
+            "other_2_value": "0"
+          }
+        }
+      },
+      "block_order": ["ingredient_1", "ingredient_2", "ingredient_3", "ingredient_4", "comparison_1", "comparison_2", "comparison_3"],
+      "settings": {
+        "heading": "And we're science-backed, of course.",
+        "heading_color": "#1a0a4a",
+        "subheading": "Optimal ratio of caffeine and L-theanine gives you balanced energy to fuel you when you need a quick boost.",
+        "subheading_color": "#555555",
+        "bg_color": "#f0faf9",
+        "show_comparison": true,
+        "comparison_brand_bg": "#00BCD4",
+        "comparison_brand_text_color": "#ffffff",
+        "comparison_other_1_label": "Energy Drink",
+        "comparison_other_2_label": "Premium Coffee",
+        "comparison_other_color": "#777777"
+      }
+    },
+    "reviews": {
+      "type": "scrolling-reviews",
+      "blocks": {
+        "review_1": {
+          "type": "above_review",
+          "settings": {
+            "review": "Actually gives you energy when you're really demotivated to do things. Game changer!",
+            "rating": 5
+          }
+        },
+        "review_2": {
+          "type": "above_review",
+          "settings": {
+            "review": "These neuro mints are superb. I used them while studying for exams and the focus was incredible.",
+            "rating": 5
+          }
+        },
+        "review_3": {
+          "type": "above_review",
+          "settings": {
+            "review": "Great product! The peppermint flavor is refreshing and the energy boost is smooth.",
+            "rating": 5
+          }
+        },
+        "review_4": {
+          "type": "above_review",
+          "settings": {
+            "review": "Best product for energy! As an entrepreneur, it helps me maintain focus throughout the day.",
+            "rating": 5
+          }
+        },
+        "review_5": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "No more energy crashes! This is way better than energy drinks.",
+            "b-rating": 5
+          }
+        },
+        "review_6": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "Perfect for long drives and late night study sessions!",
+            "b-rating": 5
+          }
+        },
+        "review_7": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "Sugar free AND it actually works? Take my money!",
+            "b-rating": 5
+          }
+        }
+      },
+      "block_order": ["review_1", "review_2", "review_3", "review_4", "review_5", "review_6", "review_7"],
+      "settings": {
+        "title": "<strong>What Our Happy Customers Are Saying!</strong>",
+        "title-color": "#00BCD4",
+        "shadow-color": "#e0f7fa"
+      }
+    },
+    "faqs": {
+      "type": "faqs",
+      "blocks": {
+        "faq_1": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "What is Neuro Energy & Focus Mints?",
+            "faq-content": "<p>Neuro Energy & Focus Mints are nootropic mints containing natural caffeine (40mg), L-theanine (60mg), Vitamin B6, and Vitamin B12. They provide a clean, balanced energy boost without the crash.</p>"
+          }
+        },
+        "faq_2": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "How many mints should I take?",
+            "faq-content": "<p>We recommend starting with 1-2 mints at a time. Each mint contains 40mg of natural caffeine (roughly equivalent to half a cup of coffee). You can adjust based on your personal tolerance.</p>"
+          }
+        },
+        "faq_3": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "Are Neuro Mints sugar free?",
+            "faq-content": "<p>Yes! Neuro Mints are 100% sugar free, aspartame free, gluten free, and vegan. They're designed to give you energy without any guilt.</p>"
+          }
+        },
+        "faq_4": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "How fast do they work?",
+            "faq-content": "<p>Neuro Mints are absorbed through the buccal mucosa (the lining of your mouth), which means they work faster than pills or drinks. Most people feel the effects within 5-10 minutes.</p>"
+          }
+        },
+        "faq_5": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "What is the return policy?",
+            "faq-content": "<p>We offer a 30-day money back guarantee. If you're not completely satisfied with your purchase, contact our customer service team for a full refund.</p>"
+          }
+        }
+      },
+      "block_order": ["faq_1", "faq_2", "faq_3", "faq_4", "faq_5"],
+      "settings": {
+        "title": "<strong>Frequently Asked Questions</strong>",
+        "bg-faq-color": "#ffffff",
+        "faq-ques-color": "#1a0a4a"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "lifestyle_banner",
+    "polaroid_cards",
+    "cta_banner",
+    "video_slider",
+    "ingredients",
+    "reviews",
+    "faqs"
+  ]
+}

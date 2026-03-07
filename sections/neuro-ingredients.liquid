@@ -1,0 +1,263 @@
+{{ 'neuro-ingredients.css' | asset_url | stylesheet_tag }}
+
+<div class="neuro-ingredients" style="background-color: {{ section.settings.bg_color }};">
+  <div class="neuro-ingredients__container">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="neuro-ingredients__heading" style="color: {{ section.settings.heading_color }};">
+        {{ section.settings.heading }}
+      </h2>
+    {%- endif -%}
+
+    {%- if section.settings.subheading != blank -%}
+      <p class="neuro-ingredients__subheading" style="color: {{ section.settings.subheading_color }};">
+        {{ section.settings.subheading }}
+      </p>
+    {%- endif -%}
+
+    <div class="neuro-ingredients__grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'ingredient' -%}
+          <div class="neuro-ingredients__card" {{ block.shopify_attributes }} style="background-color: {{ block.settings.card_bg }};">
+            {%- if block.settings.icon != blank -%}
+              <div class="neuro-ingredients__icon">
+                {{ block.settings.icon | image_url: width: 80 | image_tag: loading: 'lazy' }}
+              </div>
+            {%- endif -%}
+            <h3 class="neuro-ingredients__name" style="color: {{ block.settings.name_color }};">{{ block.settings.name }}</h3>
+            <p class="neuro-ingredients__description" style="color: {{ block.settings.desc_color }};">{{ block.settings.description }}</p>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    {%- comment -%} Comparison Table {%- endcomment -%}
+    {%- if section.settings.show_comparison -%}
+      <div class="neuro-ingredients__comparison">
+        <div class="neuro-ingredients__comparison-header">
+          <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--feature"></div>
+          <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--neuro" style="background-color: {{ section.settings.comparison_brand_bg }};">
+            {%- if section.settings.comparison_brand_logo != blank -%}
+              {{ section.settings.comparison_brand_logo | image_url: width: 120 | image_tag: loading: 'lazy' }}
+            {%- else -%}
+              <span style="color: {{ section.settings.comparison_brand_text_color }}; font-weight: 700;">Neuro</span>
+            {%- endif -%}
+          </div>
+          <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--other" style="color: {{ section.settings.comparison_other_color }};">
+            {{ section.settings.comparison_other_1_label }}
+          </div>
+          <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--other" style="color: {{ section.settings.comparison_other_color }};">
+            {{ section.settings.comparison_other_2_label }}
+          </div>
+        </div>
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'comparison_row' -%}
+            <div class="neuro-ingredients__comparison-row" {{ block.shopify_attributes }}>
+              <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--feature" style="color: {{ section.settings.heading_color }};">
+                {{ block.settings.feature }}
+              </div>
+              <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--neuro" style="color: {{ section.settings.comparison_brand_text_color }};">
+                {{ block.settings.neuro_value }}
+              </div>
+              <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--other">
+                {{ block.settings.other_1_value }}
+              </div>
+              <div class="neuro-ingredients__comparison-cell neuro-ingredients__comparison-cell--other">
+                {{ block.settings.other_2_value }}
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Ingredients & Compare",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "And we're science-backed, of course."
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Color",
+      "default": "#1a0a4a"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Optimal ratio of caffeine and L-theanine gives you balanced energy to fuel you when you need a quick boost."
+    },
+    {
+      "type": "color",
+      "id": "subheading_color",
+      "label": "Subheading Color",
+      "default": "#555555"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background Color",
+      "default": "#f0faf9"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_comparison",
+      "label": "Show Comparison Table",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "comparison_brand_logo",
+      "label": "Brand Logo for Comparison"
+    },
+    {
+      "type": "color",
+      "id": "comparison_brand_bg",
+      "label": "Brand Column Background",
+      "default": "#00BCD4"
+    },
+    {
+      "type": "color",
+      "id": "comparison_brand_text_color",
+      "label": "Brand Column Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "text",
+      "id": "comparison_other_1_label",
+      "label": "Other Product 1 Label",
+      "default": "Energy Drink"
+    },
+    {
+      "type": "text",
+      "id": "comparison_other_2_label",
+      "label": "Other Product 2 Label",
+      "default": "Coffee"
+    },
+    {
+      "type": "color",
+      "id": "comparison_other_color",
+      "label": "Other Columns Text Color",
+      "default": "#777777"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ingredient",
+      "name": "Ingredient Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Ingredient Name",
+          "default": "Natural Caffeine (40mg)"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "label": "Description",
+          "default": "Clean, balanced energy boost"
+        },
+        {
+          "type": "color",
+          "id": "card_bg",
+          "label": "Card Background",
+          "default": "#ffffff"
+        },
+        {
+          "type": "color",
+          "id": "name_color",
+          "label": "Name Color",
+          "default": "#1a0a4a"
+        },
+        {
+          "type": "color",
+          "id": "desc_color",
+          "label": "Description Color",
+          "default": "#666666"
+        }
+      ]
+    },
+    {
+      "type": "comparison_row",
+      "name": "Comparison Row",
+      "settings": [
+        {
+          "type": "text",
+          "id": "feature",
+          "label": "Feature Name",
+          "default": "L-theanine"
+        },
+        {
+          "type": "text",
+          "id": "neuro_value",
+          "label": "Neuro Value",
+          "default": "60mg for smooth boost"
+        },
+        {
+          "type": "text",
+          "id": "other_1_value",
+          "label": "Other Product 1 Value",
+          "default": "Only caffeine"
+        },
+        {
+          "type": "text",
+          "id": "other_2_value",
+          "label": "Other Product 2 Value",
+          "default": "Only caffeine"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredients & Compare",
+      "blocks": [
+        {
+          "type": "ingredient",
+          "settings": { "name": "Natural Caffeine (40mg)", "description": "Clean, balanced energy boost" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "name": "L-theanine (60mg)", "description": "Reduces negative side-effects of caffeine while reducing stress" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "name": "Vitamin B6 (41% DV)", "description": "Regulated mood and helps with stress" }
+        },
+        {
+          "type": "ingredient",
+          "settings": { "name": "Vitamin B12 (100% DV)", "description": "Gives energy while boosting mood" }
+        },
+        {
+          "type": "comparison_row",
+          "settings": { "feature": "L-theanine", "neuro_value": "60mg for a smooth boost", "other_1_value": "Only caffeine", "other_2_value": "Only caffeine" }
+        },
+        {
+          "type": "comparison_row",
+          "settings": { "feature": "Sugar", "neuro_value": "0mg", "other_1_value": "37g", "other_2_value": "46g" }
+        },
+        {
+          "type": "comparison_row",
+          "settings": { "feature": "Calories", "neuro_value": "0mg", "other_1_value": "50g", "other_2_value": "0g" }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

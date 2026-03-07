@@ -1,0 +1,121 @@
+.neuro-lifestyle-banner {
+  position: relative;
+  width: 100%;
+  min-height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.neuro-lifestyle-banner__image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.neuro-lifestyle-banner__image-wrapper--mobile {
+  display: none;
+}
+
+.neuro-lifestyle-banner__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.neuro-lifestyle-banner__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.neuro-lifestyle-banner__content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 24px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.neuro-lifestyle-banner__top-text {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.neuro-lifestyle-banner__heading {
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.neuro-lifestyle-banner__subheading {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 28px 0;
+  font-style: italic;
+}
+
+.neuro-lifestyle-banner__button {
+  display: inline-block;
+  padding: 16px 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.neuro-lifestyle-banner__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 749px) {
+  .neuro-lifestyle-banner {
+    min-height: 400px;
+  }
+
+  .neuro-lifestyle-banner__image-wrapper:not(.neuro-lifestyle-banner__image-wrapper--mobile) {
+    display: none;
+  }
+
+  .neuro-lifestyle-banner__image-wrapper--mobile {
+    display: block;
+  }
+
+  .neuro-lifestyle-banner__heading {
+    font-size: 56px !important;
+  }
+
+  .neuro-lifestyle-banner__top-text {
+    font-size: 1rem;
+  }
+
+  .neuro-lifestyle-banner__subheading {
+    font-size: 1.1rem;
+  }
+
+  .neuro-lifestyle-banner__content {
+    padding: 40px 20px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .neuro-lifestyle-banner__image-wrapper--mobile {
+    display: none !important;
+  }
+}

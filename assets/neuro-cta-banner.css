@@ -1,0 +1,96 @@
+.neuro-cta-banner {
+    padding: 0;
+    overflow: hidden;
+}
+
+.neuro-cta-banner__container {
+    display: flex;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: 500px;
+}
+
+.neuro-cta-banner__text {
+    flex: 1;
+    padding: 60px 60px 60px 80px;
+}
+
+.neuro-cta-banner__heading-line1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 4px 0;
+    line-height: 1.2;
+}
+
+.neuro-cta-banner__heading-line2 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    margin: 0 0 12px 0;
+    line-height: 1.1;
+}
+
+.neuro-cta-banner__subheading {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+}
+
+.neuro-cta-banner__button {
+    display: inline-block;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.neuro-cta-banner__button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 188, 212, 0.3);
+}
+
+.neuro-cta-banner__image-wrapper {
+    flex: 1;
+    min-height: 400px;
+    position: relative;
+}
+
+.neuro-cta-banner__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@media screen and (max-width: 749px) {
+    .neuro-cta-banner__container {
+        flex-direction: column-reverse;
+        min-height: auto;
+    }
+
+    .neuro-cta-banner__text {
+        padding: 40px 24px;
+        text-align: left;
+    }
+
+    .neuro-cta-banner__heading-line1 {
+        font-size: 1.4rem;
+    }
+
+    .neuro-cta-banner__heading-line2 {
+        font-size: 2rem;
+    }
+
+    .neuro-cta-banner__subheading {
+        font-size: 1.3rem;
+    }
+
+    .neuro-cta-banner__image-wrapper {
+        width: 100%;
+        min-height: 300px;
+    }
+}

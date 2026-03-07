@@ -1,1 +1,38 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"1716812035257b3fcc":{"type":"apps","settings":{"include_margins":true}},"newsletter":{"type":"newsletter","blocks":{"heading":{"type":"heading","settings":{"heading":"Subscribe to our emails","heading_size":"h1"}},"paragraph":{"type":"paragraph","settings":{"text":"<p>Join our email list for exclusive offers and the latest news. <\/p>"}},"email-form":{"type":"email_form","settings":{}}},"block_order":["heading","paragraph","email-form"],"settings":{"color_scheme":"background-2","full_width":true,"padding_top":52,"padding_bottom":52}},"footer":{"type":"footer","blocks":{"611d44d3-94f1-4071-94aa-c9a85271612d":{"type":"link_list","disabled":true,"settings":{"heading":"","menu":"footer"}},"3c43510a-5ffb-4c4b-80f7-fe7746a23791":{"type":"text","disabled":true,"settings":{"heading":"ABOUT THE BRAND","subtext":"<p>Ark Drops harnesses nature to boost energy, focus, and endurance. Our oxygen-infused formula helps you perform at your best—naturally!<\/p>"}},"459bcae3-7da2-418c-b03a-518949faa111":{"type":"image","disabled":true,"settings":{"image_width":200,"alignment":""}}},"block_order":["611d44d3-94f1-4071-94aa-c9a85271612d","3c43510a-5ffb-4c4b-80f7-fe7746a23791","459bcae3-7da2-418c-b03a-518949faa111"],"settings":{"color_scheme":"background-2","newsletter_enable":false,"newsletter_heading":"Subscribe to our emails","enable_follow_on_shop":true,"show_social":true,"enable_country_selector":true,"enable_language_selector":true,"payment_enable":false,"show_policy":false,"footer-txt":"","margin_top":0,"padding_top":0,"padding_bottom":36}}},"order":["1716812035257b3fcc","newsletter","footer"]}
+{
+    "name": "t:sections.footer.name",
+    "type": "footer",
+    "sections": {
+        "footer": {
+            "type": "footer",
+            "blocks": {
+                "link_list_brand": {
+                    "type": "link_list",
+                    "settings": {
+                        "heading": "Shop",
+                        "menu": "main-menu"
+                    }
+                }
+            },
+            "block_order": [
+                "link_list_brand"
+            ],
+            "settings": {
+                "newsletter_enable": true,
+                "newsletter_heading": "Sign up to our newsletter",
+                "newsletter_text": "Receive special offers and first look at new products.",
+                "color_scheme": "background-2",
+                "enable_follow_on_shop": false,
+                "show_social": true,
+                "enable_country_selector": false,
+                "enable_language_selector": false,
+                "payment_enable": true,
+                "margin_top": 0,
+                "padding_top": 36,
+                "padding_bottom": 36
+            }
+        }
+    },
+    "order": [
+        "footer"
+    ]
+}
