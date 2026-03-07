@@ -1,1 +1,639 @@
-{"sections":{"main":{"type":"main-product","blocks":{"title":{"type":"title","settings":{}},"4882410d-eb44-4444-9258-6624e44f6a87":{"type":"subtitle","settings":{"pro-subtitle":"Natural black"}},"text_EFDcjF":{"type":"text","disabled":true,"settings":{"text":"\"I was really skeptic but recommended this product because I have asthma. It's crazy how much it has helped me feel relieved. Thank you” - Zainab B<strong>.<\/strong>","text_style":"body"}},"0018d287-cdf5-4517-af5c-6a7840052b0a":{"type":"price","settings":{}},"buy_buttons":{"type":"buy_buttons","disabled":true,"settings":{"shipping-txt":"<strong>2~3 Day Shipping from Dhaka, Bangladesh 🇧🇩<\/strong> ","show_dynamic_checkout":false,"show_gift_card_recipient":true}},"releasit_cod_form_button_app_block_gYddBj":{"type":"shopify:\/\/apps\/releasit-cod-form\/blocks\/button-app-block\/72faf214-4174-4fec-886b-0d0e8d3af9a2","settings":{"product":"{{product}}"}},"af9f4454-06eb-434c-86ea-059b201ecec6":{"type":"description","disabled":true,"settings":{}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"dropdown"}},"a134f827-c44e-4834-abbb-dea857d93816":{"type":"icon-with-text","settings":{"layout":"horizontal","icon_1":"truck","heading_1":"Shipped from Dhaka","icon_2":"return","heading_2":"Money Back Gurantee","icon_3":"heart","heading_3":"Cash On Delivery"}},"29f02082-10d7-4a2d-ad99-f56582cc1504":{"type":"collapsible_tab","disabled":true,"settings":{"heading":"Where is it made?","icon":"question_mark","content":"<p><strong>Using Nano-Crystalline technology, <\/strong>Bleame™ Crystal Hair Eraser allows the hair to clump and break from the surface when rubbed gently on the skin. This process also helps exfoliate, revealing baby smooth skin after use 💜<\/p>","page":""}},"e31ec655-753c-48fd-80e7-8acaf40092f7":{"type":"instruction_tab","disabled":true,"settings":{"heading":"Instructions","icon":"star","content":"<h3>Prep Your Skin<\/h3><p>Exfoliate your skin no less than 24 hours before use. If you have sensitive skin, exfoliate no less than 48 hours before use.<\/p><h3>Patch Test for Sensitivity<\/h3><p>Conduct a <a href=\"https:\/\/help.bleame.com\/en-US\/how-to-do-a-patch-test-before-using-bleame-crystal-hair-eraser-254672\"><strong>patch test<\/strong><\/a> on a small area of each leg: one with damp skin and the other with dry skin. Test with moisture barriers like hypoallergenic moisturizer or cream. Allow it to fully absorb before using your Eraser. For added comfort, test with a protective layer of shaving gel or cream.<\/p><h3>Get to action<\/h3><p>After a successful patch test, treat your desired areas using the method and technique that felt most comfortable during testing. Start with gentle, circular motions and light pressure. Adjust your technique as needed, avoiding excessive pressure that may cause irritation. Take breaks between passes and use shorter strokes to minimize friction and heat.<\/p><h3>Aftercare for Soothing Relief<\/h3><p>Rinse the treated area with cool water and gently pat it dry, avoiding rubbing. Apply a fragrance-free, hypoallergenic moisturizer. For an extra relief, use a cold compress for 10-15 minutes.<\/p><h3>Caring for Your Eraser<\/h3><p>After each use, rinse your Crystal Hair Eraser under running water to remove hair and exfoliated skin. Store the eraser in a cool, dry place, away from direct sunlight and humidity.<br\/>Important Note: If you experience any discomfort or irritation during or after use, discontinue use immediately. <a href=\"https:\/\/help.bleame.com\/en-US\/how-to-effectively-use-the-bleame-crystal-hair-eraser-254714\"><strong>Visit our Help Center for more information.<\/strong><\/a><\/p>","page":""}},"137bee7a-dd9c-415e-ac1c-7c29ab2fd653":{"type":"collapsible_tab","settings":{"heading":"Shipping","icon":"truck","content":"<p><strong>Shipping all over Bangladesh is only 100 taka<\/strong><\/p>","page":""}},"55879359-71f2-45bb-9e58-3c0de78c7375":{"type":"collapsible_tab","settings":{"heading":"Return & Refund Policy","icon":"return","content":"<p><strong>1.1 Return Due To Change Of Mind<\/strong><\/p><p> REGENESIS will happily accept returns due to change of mind as long as a request to return is received by us within 72 hours of receipt of item. <\/p><p>Once approved, refunds will be processed to their original payment method. We will notify you once this has been completed through email.<\/p><p>REGENESIS will refund the value of the goods returned but will NOT refund the value of any shipping paid.<\/p><p><strong>1.2 Cancellations<\/strong><\/p><p>If you change your mind before a tracking numbers has been generated, we are able to accept cancellations at any time before the order has been dispatched. If an order has already been dispatched, please refer to our refund policy.<\/p>","page":""}},"bcec75a1-c328-4842-87bf-7cc6efbe88f2":{"type":"logo-list","disabled":true,"settings":{"text":"<p>10,000+ Oud Implosion Lovers<\/p>"}}},"block_order":["title","4882410d-eb44-4444-9258-6624e44f6a87","text_EFDcjF","0018d287-cdf5-4517-af5c-6a7840052b0a","buy_buttons","releasit_cod_form_button_app_block_gYddBj","af9f4454-06eb-434c-86ea-059b201ecec6","variant_picker","a134f827-c44e-4834-abbb-dea857d93816","29f02082-10d7-4a2d-ad99-f56582cc1504","e31ec655-753c-48fd-80e7-8acaf40092f7","137bee7a-dd9c-415e-ac1c-7c29ab2fd653","55879359-71f2-45bb-9e58-3c0de78c7375","bcec75a1-c328-4842-87bf-7cc6efbe88f2"],"settings":{"enable_sticky_info":true,"media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","gallery_layout":"thumbnail_slider","media_position":"left","image_zoom":"none","mobile_thumbnails":"show","hide_variants":false,"enable_video_looping":false,"padding_top":12,"padding_bottom":12}},"video_slider_with_text_mbB8b4":{"type":"video-slider-with-text","blocks":{"video_eEMRwR":{"type":"video","settings":{"image":"shopify:\/\/shop_images\/11.png","video_link":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/307c44cc2d734f9ab61f21ae280405cf.mp4"}},"video_JpCLzV":{"type":"video","settings":{"image":"shopify:\/\/shop_images\/12.png","video_link":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/22965b170d1143039bd630ced7683c6a.mp4"}},"video_JCpGh4":{"type":"video","settings":{"image":"shopify:\/\/shop_images\/13.png","video_link":""}}},"block_order":["video_eEMRwR","video_JpCLzV","video_JCpGh4"],"name":"Product Video Slider","settings":{"title":"","text":"","button_txt":"","button_link":"","colr-bg":"#000000","btn-color":"","btn-txt-color":"","icon":"#ffffff"}},"image_banner_Pwd4kB":{"type":"image-banner","name":"t:sections.image-banner.presets.name","settings":{"image":"shopify:\/\/shop_images\/10.png","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"4536657b-07aa-4787-922f-be0de52afe9c":{"type":"image-with-text-2","disabled":true,"settings":{"heading":"Look At How Others Are Loving Their Bleame","text":"<p>These women are actual Bleame customers that have seen results with consistent use of Bleame's Gua Sha Facial Set!<\/p>","rev-text":"Rated 4.9\/5 by 175,000+ Happy Customers","btn-txt":"Claim Offer","btn-link":"#","btn-bg-color":"#7069bc","btn-txt-color":"#ffffff"}},"image_banner_hBni6G":{"type":"image-banner","name":"t:sections.image-banner.presets.name","settings":{"image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"image_banner_QcNdmN":{"type":"image-banner","name":"t:sections.image-banner.presets.name","settings":{"image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"image_banner_eX4cre":{"type":"image-banner","name":"t:sections.image-banner.presets.name","settings":{"image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"image_banner_H9TggN":{"type":"image-banner","disabled":true,"name":"t:sections.image-banner.presets.name","settings":{"image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"8bb65be9-da27-4363-93a6-7ef4f50d53a3":{"type":"multicolumn","blocks":{"column_BUMTe4":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/6.jpg","title":"<strong>Step 1: Prepare<\/strong>","text":"<p>Ensure your scalp area and hair is clean and dry for best results. Our hair filler powder works best on dry hair and scalp.<br\/><br\/><\/p>","link_label":"","link":""}},"column_38bqiX":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/7.webp","title":"<strong>Step 2: Load the brush<\/strong>","text":"<p>Remove the attached brush from the bottom, and gently dab it onto the powder. Dab as needed depending on the size of the area you're applying on.<br\/><\/p>","link_label":"","link":""}},"column_7tbqQj":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/8.webp","title":"<strong>Step 3: Apply to targeted areas<\/strong>","text":"<p>Gently stroke the brush onto areas of your scalp with thinning hair and bald patches, or areas of patchy beard or hairline, focusing on areas where you want fuller looking hair.<\/p>","link_label":"","link":""}},"column_xYHw6p":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/9.jpg","title":"<strong>Step 4: See instant results<\/strong>","text":"<p>Check out your instantly fuller, natural-looking hair. Let it dry naturally in 2-3 minutes or use your preferred hair spray to set your hair in place.<br\/><\/p>","link_label":"","link":""}}},"block_order":["column_BUMTe4","column_38bqiX","column_7tbqQj","column_xYHw6p"],"settings":{"title":"","heading_size":"h2","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"center","background_style":"none","button_label":"","button_link":"","color_scheme":"background-2","columns_mobile":"1","swipe_on_mobile":true,"padding_top":24,"padding_bottom":24}},"sale_compare_eayVKd":{"type":"sale-compare","blocks":{"heading_NDwYa8":{"type":"heading","settings":{"title":"Water Resistance","tick":true,"cross":true}},"heading_HjMPCT":{"type":"heading","settings":{"title":"Sweat Proof","tick":true,"cross":true}},"heading_AnGH7W":{"type":"heading","settings":{"title":"Natural","tick":true,"cross":true}},"heading_iiFhE6":{"type":"heading","settings":{"title":"Expensive","tick":false,"cross":false}}},"block_order":["heading_NDwYa8","heading_HjMPCT","heading_AnGH7W","heading_iiFhE6"],"name":"Sale Compare","settings":{"heading":"US Vs Them","text":"","logo":"shopify:\/\/shop_images\/logo.png","other":"Others","bg-color":"#000000","txt-color":"#ffffff"}},"image_with_text_P4frGN":{"type":"image-with-text","blocks":{"heading_BDX8Gr":{"type":"heading","settings":{"heading":"100% Money Back Guarantee","heading_size":"h2"}},"text_xbPz34":{"type":"text","settings":{"text":"<p>Our customers have seen the results and we are confident you will too! That’s why we’re offering a<strong> risk-free trial.<\/strong> If you’re not satisfied, we’ll gladly issue a full refund.<\/p>","text_style":"body"}}},"block_order":["heading_BDX8Gr","text_xbPz34"],"name":"t:sections.image-with-text.presets.name","settings":{"image":"shopify:\/\/shop_images\/HBHAIRFILLERWEBSITE-V2-IMAGE2.webp","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","color_scheme":"accent-1","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"scrolling_reviews_Jm4EzF":{"type":"scrolling-reviews","blocks":{"above_review_dWENqK":{"type":"above_review","settings":{"client-image":"shopify:\/\/shop_images\/1.jpg","review":"This product is excellent, and all my friends and family have tried it and think the same.","rating":5}},"above_review_fHGkLL":{"type":"above_review","settings":{"review":"I gave it to my husband and he loveeed it.","rating":5}},"above_review_hWFQLJ":{"type":"above_review","settings":{"review":"I need to purchase a new one as my whole family has been using  it","rating":5}},"above_review_jYdVf4":{"type":"above_review","settings":{"review":"I have been getting alot of compliments !!!","rating":5}},"above_review_fpwGm7":{"type":"above_review","settings":{"review":"I was skeptical but I got it because of their money back guarantee and I am GLAD I did","rating":5}},"below_review_Df7Ca9":{"type":"below_review","settings":{"b-review":"I don't need a hair transplant anymore","b-rating":5}},"below_review_PkRNPH":{"type":"below_review","settings":{"b-review":"makes me feel so confident and lavish","b-rating":5}},"below_review_eqAqrd":{"type":"below_review","settings":{"b-review":"ALOT OF GIRLS ARE TEXTING ME","b-rating":5}},"below_review_EerixG":{"type":"below_review","settings":{"b-review":"I f***king LOVE IT!","b-rating":5}}},"block_order":["above_review_dWENqK","above_review_fHGkLL","above_review_hWFQLJ","above_review_jYdVf4","above_review_fpwGm7","below_review_Df7Ca9","below_review_PkRNPH","below_review_eqAqrd","below_review_EerixG"],"settings":{"title":"<strong>What Our Happy Customers Are Saying!<\/strong>","title-color":"#1559ea","shadow-color":"#99d6e3"}},"rich_text_iHkxtB":{"type":"rich-text","blocks":{"text_QDm6rp":{"type":"text","disabled":true,"settings":{"text":"<p>Packaged in a sleek black and gold bottle, the fragrance is as visually stunning as it is intoxicatingly fragrant.<\/p>"}}},"block_order":["text_QDm6rp"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"background-2","full_width":true,"padding_top":40,"padding_bottom":52}},"related-products":{"type":"related-products","disabled":true,"settings":{"heading":"Featured collection","heading_size":"h1","products_to_show":4,"columns_desktop":4,"color_scheme":"background-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"columns_mobile":"2","padding_top":36,"padding_bottom":68}},"164451a9-0f1f-4479-9109-ebc7c6e5542c":{"type":"faqs","blocks":{"8a01a5ba-a1ec-432a-9ab5-e8b7a7bb31a0":{"type":"faq","settings":{"faq-ques":"How long does Hair Density filler stay in place?","faq-content":"<p>provides up to 48 hours of coverage and is water-resistant and sweat-proof, so it stays in place until you wash it out with shampoo.<br\/><\/p>"}},"4a43d308-0fc8-4462-9127-042d68fc8077":{"type":"faq","settings":{"faq-ques":"Will Hair Density filler rub off on my clothes or pillow?","faq-content":"<p>We always recommend using a moderate amount of hair filler powder for the best result that looks clean and is mess free. After applying the hair filler powder, allow it to dry for 3-4 minutes and then it won’t transfer onto your clothes, pillow, or hands. You can also apply any hair spray after for added protection<\/p>"}},"d37333f3-812c-4def-9afc-b41ea9840783":{"type":"faq","settings":{"faq-ques":"What if I’m not satisfied with the results?","faq-content":"<p>We’re confident you’ll love REGENESIS , but if you’re not fully satisfied, we offer a money-back guarantee. Just reach out to our customer service team!<br\/><br\/><\/p>"}},"52bfd24f-8f46-4a4a-a0a9-c33916419e47":{"type":"faq","settings":{"faq-ques":"Is there cash on delivery","faq-content":"<p>Yes , we provide cash on delivery<\/p>"}}},"block_order":["8a01a5ba-a1ec-432a-9ab5-e8b7a7bb31a0","4a43d308-0fc8-4462-9127-042d68fc8077","d37333f3-812c-4def-9afc-b41ea9840783","52bfd24f-8f46-4a4a-a0a9-c33916419e47"],"settings":{"title":"<strong>Questions? We’ve Got You Covered<\/strong>","bg-faq-color":"#ffffff","faq-ques-color":"#000000"}},"170664101886ef77cd":{"type":"apps","settings":{"include_margins":true}}},"order":["main","video_slider_with_text_mbB8b4","image_banner_Pwd4kB","4536657b-07aa-4787-922f-be0de52afe9c","image_banner_hBni6G","image_banner_QcNdmN","image_banner_eX4cre","image_banner_H9TggN","8bb65be9-da27-4363-93a6-7ef4f50d53a3","sale_compare_eayVKd","image_with_text_P4frGN","scrolling_reviews_Jm4EzF","rich_text_iHkxtB","related-products","164451a9-0f1f-4479-9109-ebc7c6e5542c","170664101886ef77cd"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {}
+        },
+        "4882410d-eb44-4444-9258-6624e44f6a87": {
+          "type": "subtitle",
+          "settings": {
+            "pro-subtitle": "Natural black"
+          }
+        },
+        "text_EFDcjF": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "\"I was really skeptic but recommended this product because I have asthma. It's crazy how much it has helped me feel relieved. Thank you” - Zainab B<strong>.</strong>",
+            "text_style": "body"
+          }
+        },
+        "0018d287-cdf5-4517-af5c-6a7840052b0a": {
+          "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "disabled": true,
+          "settings": {
+            "shipping-txt": "<strong>2~3 Day Shipping from Dhaka, Bangladesh 🇧🇩</strong> ",
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "af9f4454-06eb-434c-86ea-059b201ecec6": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "a134f827-c44e-4834-abbb-dea857d93816": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "truck",
+            "heading_1": "Shipped from Dhaka",
+            "icon_2": "return",
+            "heading_2": "Money Back Gurantee",
+            "icon_3": "heart",
+            "heading_3": "Cash On Delivery"
+          }
+        },
+        "29f02082-10d7-4a2d-ad99-f56582cc1504": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Where is it made?",
+            "icon": "question_mark",
+            "content": "<p><strong>Using Nano-Crystalline technology, </strong>Bleame™ Crystal Hair Eraser allows the hair to clump and break from the surface when rubbed gently on the skin. This process also helps exfoliate, revealing baby smooth skin after use 💜</p>",
+            "page": ""
+          }
+        },
+        "e31ec655-753c-48fd-80e7-8acaf40092f7": {
+          "type": "instruction_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Instructions",
+            "icon": "star",
+            "content": "<h3>Prep Your Skin</h3><p>Exfoliate your skin no less than 24 hours before use. If you have sensitive skin, exfoliate no less than 48 hours before use.</p><h3>Patch Test for Sensitivity</h3><p>Conduct a <a href=\"https://help.bleame.com/en-US/how-to-do-a-patch-test-before-using-bleame-crystal-hair-eraser-254672\"><strong>patch test</strong></a> on a small area of each leg: one with damp skin and the other with dry skin. Test with moisture barriers like hypoallergenic moisturizer or cream. Allow it to fully absorb before using your Eraser. For added comfort, test with a protective layer of shaving gel or cream.</p><h3>Get to action</h3><p>After a successful patch test, treat your desired areas using the method and technique that felt most comfortable during testing. Start with gentle, circular motions and light pressure. Adjust your technique as needed, avoiding excessive pressure that may cause irritation. Take breaks between passes and use shorter strokes to minimize friction and heat.</p><h3>Aftercare for Soothing Relief</h3><p>Rinse the treated area with cool water and gently pat it dry, avoiding rubbing. Apply a fragrance-free, hypoallergenic moisturizer. For an extra relief, use a cold compress for 10-15 minutes.</p><h3>Caring for Your Eraser</h3><p>After each use, rinse your Crystal Hair Eraser under running water to remove hair and exfoliated skin. Store the eraser in a cool, dry place, away from direct sunlight and humidity.<br/>Important Note: If you experience any discomfort or irritation during or after use, discontinue use immediately. <a href=\"https://help.bleame.com/en-US/how-to-effectively-use-the-bleame-crystal-hair-eraser-254714\"><strong>Visit our Help Center for more information.</strong></a></p>",
+            "page": ""
+          }
+        },
+        "137bee7a-dd9c-415e-ac1c-7c29ab2fd653": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Shipping",
+            "icon": "truck",
+            "content": "<p><strong>Shipping all over Bangladesh is only 100 taka</strong></p>",
+            "page": ""
+          }
+        },
+        "55879359-71f2-45bb-9e58-3c0de78c7375": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Return & Refund Policy",
+            "icon": "return",
+            "content": "<p><strong>1.1 Return Due To Change Of Mind</strong></p><p> REGENESIS will happily accept returns due to change of mind as long as a request to return is received by us within 72 hours of receipt of item. </p><p>Once approved, refunds will be processed to their original payment method. We will notify you once this has been completed through email.</p><p>REGENESIS will refund the value of the goods returned but will NOT refund the value of any shipping paid.</p><p><strong>1.2 Cancellations</strong></p><p>If you change your mind before a tracking numbers has been generated, we are able to accept cancellations at any time before the order has been dispatched. If an order has already been dispatched, please refer to our refund policy.</p>",
+            "page": ""
+          }
+        },
+        "bcec75a1-c328-4842-87bf-7cc6efbe88f2": {
+          "type": "logo-list",
+          "disabled": true,
+          "settings": {
+            "text": "<p>10,000+ Oud Implosion Lovers</p>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "4882410d-eb44-4444-9258-6624e44f6a87",
+        "text_EFDcjF",
+        "0018d287-cdf5-4517-af5c-6a7840052b0a",
+        "buy_buttons",
+        "af9f4454-06eb-434c-86ea-059b201ecec6",
+        "variant_picker",
+        "a134f827-c44e-4834-abbb-dea857d93816",
+        "29f02082-10d7-4a2d-ad99-f56582cc1504",
+        "e31ec655-753c-48fd-80e7-8acaf40092f7",
+        "137bee7a-dd9c-415e-ac1c-7c29ab2fd653",
+        "55879359-71f2-45bb-9e58-3c0de78c7375",
+        "bcec75a1-c328-4842-87bf-7cc6efbe88f2"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "none",
+        "mobile_thumbnails": "show",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 12,
+        "padding_bottom": 12
+      }
+    },
+    "video_slider_with_text_mbB8b4": {
+      "type": "video-slider-with-text",
+      "blocks": {
+        "video_yTGHYp": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/66785a8fb1b145c5a9bc8eb323da4503.mp4"
+          }
+        },
+        "video_mjDh6H": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/22b482c729824bb78620b5ee428529f6.mp4"
+          }
+        },
+        "video_eEMRwR": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/c1e0fc8e2009409d8170055cb4d5b675.mp4"
+          }
+        },
+        "video_JpCLzV": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/22965b170d1143039bd630ced7683c6a.mp4"
+          }
+        },
+        "video_JCpGh4": {
+          "type": "video",
+          "settings": {
+            "video_link": "https://cdn.shopify.com/videos/c/o/v/682dfb2c1d8045caa240fe4b93d99227.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "video_yTGHYp",
+        "video_mjDh6H",
+        "video_eEMRwR",
+        "video_JpCLzV",
+        "video_JCpGh4"
+      ],
+      "name": "Product Video Slider",
+      "settings": {
+        "title": "",
+        "text": "",
+        "button_txt": "",
+        "button_link": "",
+        "colr-bg": "#000000",
+        "btn-color": "",
+        "btn-txt-color": "",
+        "icon": "#ffffff"
+      }
+    },
+    "image_banner_Pwd4kB": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "4536657b-07aa-4787-922f-be0de52afe9c": {
+      "type": "image-with-text-2",
+      "disabled": true,
+      "settings": {
+        "heading": "Look At How Others Are Loving Their Bleame",
+        "text": "<p>These women are actual Bleame customers that have seen results with consistent use of Bleame's Gua Sha Facial Set!</p>",
+        "rev-text": "Rated 4.9/5 by 175,000+ Happy Customers",
+        "btn-txt": "Claim Offer",
+        "btn-link": "#",
+        "btn-bg-color": "#7069bc",
+        "btn-txt-color": "#ffffff"
+      }
+    },
+    "image_banner_hBni6G": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_QcNdmN": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_eX4cre": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_H9TggN": {
+      "type": "image-banner",
+      "disabled": true,
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "8bb65be9-da27-4363-93a6-7ef4f50d53a3": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_BUMTe4": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Step 1: Prepare</strong>",
+            "text": "<p>Ensure your scalp area and hair is clean and dry for best results. Our hair filler powder works best on dry hair and scalp.<br/><br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_38bqiX": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Step 2: Load the brush</strong>",
+            "text": "<p>Remove the attached brush from the bottom, and gently dab it onto the powder. Dab as needed depending on the size of the area you're applying on.<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7tbqQj": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Step 3: Apply to targeted areas</strong>",
+            "text": "<p>Gently stroke the brush onto areas of your scalp with thinning hair and bald patches, or areas of patchy beard or hairline, focusing on areas where you want fuller looking hair.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xYHw6p": {
+          "type": "column",
+          "settings": {
+            "title": "<strong>Step 4: See instant results</strong>",
+            "text": "<p>Check out your instantly fuller, natural-looking hair. Let it dry naturally in 2-3 minutes or use your preferred hair spray to set your hair in place.<br/></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_BUMTe4",
+        "column_38bqiX",
+        "column_7tbqQj",
+        "column_xYHw6p"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "sale_compare_eayVKd": {
+      "type": "sale-compare",
+      "blocks": {
+        "heading_NDwYa8": {
+          "type": "heading",
+          "settings": {
+            "title": "Water Resistance",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_HjMPCT": {
+          "type": "heading",
+          "settings": {
+            "title": "Sweat Proof",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_AnGH7W": {
+          "type": "heading",
+          "settings": {
+            "title": "Natural",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_iiFhE6": {
+          "type": "heading",
+          "settings": {
+            "title": "Expensive",
+            "tick": false,
+            "cross": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_NDwYa8",
+        "heading_HjMPCT",
+        "heading_AnGH7W",
+        "heading_iiFhE6"
+      ],
+      "name": "Sale Compare",
+      "settings": {
+        "heading": "US Vs Them",
+        "text": "",
+        "other": "Others",
+        "bg-color": "#000000",
+        "txt-color": "#ffffff"
+      }
+    },
+    "image_with_text_P4frGN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BDX8Gr": {
+          "type": "heading",
+          "settings": {
+            "heading": "100% Money Back Guarantee",
+            "heading_size": "h2"
+          }
+        },
+        "text_xbPz34": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our customers have seen the results and we are confident you will too! That’s why we’re offering a<strong> risk-free trial.</strong> If you’re not satisfied, we’ll gladly issue a full refund.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BDX8Gr",
+        "text_xbPz34"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_reviews_Jm4EzF": {
+      "type": "scrolling-reviews",
+      "blocks": {
+        "above_review_dWENqK": {
+          "type": "above_review",
+          "settings": {
+            "review": "This product is excellent, and all my friends and family have tried it and think the same.",
+            "rating": 5
+          }
+        },
+        "above_review_fHGkLL": {
+          "type": "above_review",
+          "settings": {
+            "review": "I gave it to my husband and he loveeed it.",
+            "rating": 5
+          }
+        },
+        "above_review_hWFQLJ": {
+          "type": "above_review",
+          "settings": {
+            "review": "I need to purchase a new one as my whole family has been using  it",
+            "rating": 5
+          }
+        },
+        "above_review_jYdVf4": {
+          "type": "above_review",
+          "settings": {
+            "review": "I have been getting alot of compliments !!!",
+            "rating": 5
+          }
+        },
+        "above_review_fpwGm7": {
+          "type": "above_review",
+          "settings": {
+            "review": "I was skeptical but I got it because of their money back guarantee and I am GLAD I did",
+            "rating": 5
+          }
+        },
+        "below_review_Df7Ca9": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "I don't need a hair transplant anymore",
+            "b-rating": 5
+          }
+        },
+        "below_review_PkRNPH": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "makes me feel so confident and lavish",
+            "b-rating": 5
+          }
+        },
+        "below_review_eqAqrd": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "ALOT OF GIRLS ARE TEXTING ME",
+            "b-rating": 5
+          }
+        },
+        "below_review_EerixG": {
+          "type": "below_review",
+          "settings": {
+            "b-review": "I f***king LOVE IT!",
+            "b-rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "above_review_dWENqK",
+        "above_review_fHGkLL",
+        "above_review_hWFQLJ",
+        "above_review_jYdVf4",
+        "above_review_fpwGm7",
+        "below_review_Df7Ca9",
+        "below_review_PkRNPH",
+        "below_review_eqAqrd",
+        "below_review_EerixG"
+      ],
+      "settings": {
+        "title": "<strong>What Our Happy Customers Are Saying!</strong>",
+        "title-color": "#1559ea",
+        "shadow-color": "#99d6e3"
+      }
+    },
+    "rich_text_iHkxtB": {
+      "type": "rich-text",
+      "blocks": {
+        "text_QDm6rp": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Packaged in a sleek black and gold bottle, the fragrance is as visually stunning as it is intoxicatingly fragrant.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_QDm6rp"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "heading": "Featured collection",
+        "heading_size": "h1",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 68
+      }
+    },
+    "164451a9-0f1f-4479-9109-ebc7c6e5542c": {
+      "type": "faqs",
+      "blocks": {
+        "8a01a5ba-a1ec-432a-9ab5-e8b7a7bb31a0": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "How long does Hair Density filler stay in place?",
+            "faq-content": "<p>provides up to 48 hours of coverage and is water-resistant and sweat-proof, so it stays in place until you wash it out with shampoo.<br/></p>"
+          }
+        },
+        "4a43d308-0fc8-4462-9127-042d68fc8077": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "Will Hair Density filler rub off on my clothes or pillow?",
+            "faq-content": "<p>We always recommend using a moderate amount of hair filler powder for the best result that looks clean and is mess free. After applying the hair filler powder, allow it to dry for 3-4 minutes and then it won’t transfer onto your clothes, pillow, or hands. You can also apply any hair spray after for added protection</p>"
+          }
+        },
+        "d37333f3-812c-4def-9afc-b41ea9840783": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "What if I’m not satisfied with the results?",
+            "faq-content": "<p>We’re confident you’ll love REGENESIS , but if you’re not fully satisfied, we offer a money-back guarantee. Just reach out to our customer service team!<br/><br/></p>"
+          }
+        },
+        "52bfd24f-8f46-4a4a-a0a9-c33916419e47": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "Is there cash on delivery",
+            "faq-content": "<p>Yes , we provide cash on delivery</p>"
+          }
+        }
+      },
+      "block_order": [
+        "8a01a5ba-a1ec-432a-9ab5-e8b7a7bb31a0",
+        "4a43d308-0fc8-4462-9127-042d68fc8077",
+        "d37333f3-812c-4def-9afc-b41ea9840783",
+        "52bfd24f-8f46-4a4a-a0a9-c33916419e47"
+      ],
+      "settings": {
+        "title": "<strong>Questions? We’ve Got You Covered</strong>",
+        "bg-faq-color": "#ffffff",
+        "faq-ques-color": "#000000"
+      }
+    },
+    "170664101886ef77cd": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "video_slider_with_text_mbB8b4",
+    "image_banner_Pwd4kB",
+    "4536657b-07aa-4787-922f-be0de52afe9c",
+    "image_banner_hBni6G",
+    "image_banner_QcNdmN",
+    "image_banner_eX4cre",
+    "image_banner_H9TggN",
+    "8bb65be9-da27-4363-93a6-7ef4f50d53a3",
+    "sale_compare_eayVKd",
+    "image_with_text_P4frGN",
+    "scrolling_reviews_Jm4EzF",
+    "rich_text_iHkxtB",
+    "related-products",
+    "164451a9-0f1f-4479-9109-ebc7c6e5542c",
+    "170664101886ef77cd"
+  ]
+}
