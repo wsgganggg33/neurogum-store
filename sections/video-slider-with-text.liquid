@@ -1,0 +1,394 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+<!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
+<section class="vid-slider-{{ section.id }}">
+<div class="page-width">
+ <div class="review-container">
+  <div class="review-left">
+    <div class="review-slider-{{ section.id }}">
+     {%- for block in section.blocks -%}
+      {% if block.type == 'video' %}
+        <div class="review-slideBox">
+          <div class="video-wrapper">
+            <video preload="none" poster="{{ block.settings.image | img_url: '2000x' }}" width="300" height="auto" playsinline loop class="videos video_{{ block.id }}" data-id="{{ block.id }}">
+              <source src="{{ block.settings.video_link }}" type="video/mp4">
+            </video>
+            <div class="video-player" id="hi">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+                <path d="M40 0a40 40 0 1040 40A40 40 0 0040 0zM26 61.56V18.44L64 40z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+       {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+  <div class="review-right">
+    <h2>{{ section.settings.title }}</h2>
+
+    <div class="pro_icon_text">
+     {%- for block in section.blocks -%}
+      {% if block.type == 'text' %}
+          <div class="item">
+            
+            <div class="progress_icn">
+              <div class="icon_progress" role="progressbar" aria-valuenow="{{ block.settings.range }}" aria-valuemin="0" aria-valuemax="100" style="--value: {{ block.settings.range }}"></div>
+            </div>
+                   
+            <div class="text">
+              {{ block.settings.text }}
+            </div>
+            
+          </div>
+       {% endif %}
+      {%- endfor -%}
+     </div>
+    
+    <p class="extra-txt">{{ section.settings.text }}</p>
+    {% if section.settings.button_txt != blank %}
+      <a href="{{ section.settings.button_link }}" class="review-btn"><span>{{ section.settings.button_txt }}</span></a>
+    {% endif %}
+  </div>
+ </div>
+</div>
+</section>
+
+
+<style>
+.vid-slider-{{ section.id }} {
+  background: {{ section.settings.colr-bg }};
+  padding: 50px 0;
+}
+.review-container{
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.review-right{
+  width: 40%;
+  padding: 0 10px 0 40px;
+}
+.pro_icon_text {
+  margin-bottom: 10px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e7e7;
+}
+.text_box .icon_progress {
+  width: 70px;
+  height: 70px;
+}
+
+.vid-slider-{{ section.id }} [role=progressbar] {
+  --percentage: var(--value);
+  --primary: {{ section.settings.btn-color }};
+  --secondary: #F1F1F1;
+  --size: 300px;
+  animation: progress 2s .5s forwards;
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid !important;
+  place-items: center;
+}
+.vid-slider-{{ section.id }} [role=progressbar]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%),var(--secondary) 0);
+  mask: radial-gradient(white 55%,transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%,#000 0);
+  -webkit-mask-mode: alpha;
+}
+.vid-slider-{{ section.id }} [role=progressbar]:after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+  font-family: Helvetica,Arial,sans-serif;
+  font-size: 18px;
+  color: #2e2a39;
+}
+.pro_icon_text .text {
+  max-width: 300px;
+  margin-left: 30px;
+}
+.pro_icon_text .text p{
+  margin: 0;
+}
+  
+.review-right h2{
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-top: 0;
+  color: #2e2a39;
+  margin-bottom: 10px;
+  max-width: 425px;
+}
+.review-right p.extra-txt{
+  font-size: 14px;
+  color: #2e2a39bf;
+  line-height: 1.2;
+  margin: 10px 0 20px;
+}
+.review-btn{
+  display: inline-block;
+  vertical-align: middle;
+  background: {{ section.settings.btn-color }};
+  font-size: 17px !important;
+  color: {{ section.settings.btn-txt-color }};
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+.review-btn span {
+  background: url("{{ 'sl-finger.png' | asset_url }}") left center no-repeat;
+  background-size: 30px auto;
+  padding-left: 40px;
+}
+.review-btn:hover{
+  color: white;
+}
+.review-left{
+  width: 60%;
+  padding: 0 20px;
+}
+.review-slideBox {
+  padding: 0 10px;
+}
+.video-wrapper {
+  position: relative;
+  border-radius: 10px;
+  height: 500px;
+  overflow: hidden;
+}
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.video-player {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-player svg{
+  width: 100px;
+  height: 100px;
+  fill: #fff;
+  stroke: #fff;
+  cursor: pointer;
+  background-color: {{ section.settings.icon }};
+  border-radius: 50%;
+  opacity: .9;
+}
+@media (max-width: 768px){
+.vid-slider-{{ section.id }} {
+  padding: 30px 0;
+}
+.vid-slider-{{ section.id }} .page-width{
+  padding: 0;
+}
+.review-container {
+  flex-direction: column;
+}
+.review-left {
+  width: 100%;
+  padding: 0;
+}
+.video-wrapper {
+  position: relative;
+  border-radius: 10px;
+  height: 400px;
+  overflow: hidden;
+}
+.review-right {
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+}
+.review-right h2{
+  font-size: 36px;
+  line-height: 41px;
+}
+}
+
+.video-wrapper.playing .video-player {
+  display: none;
+}
+</style>
+
+
+<script>
+  $('.review-slider-{{ section.id }}').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    responsive: [
+      {
+        breakpoint: 3000,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '60px',
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '80px',
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+</script>
+              
+<script>
+
+document.querySelectorAll(".review-slider-{{ section.id }} .video-wrapper").forEach(function (element) {
+  element.addEventListener("click", function () {
+    if (document.querySelector(".video-wrapper.playing") && document.querySelector(".video-wrapper.playing") != this) {
+        document.querySelector(".video-wrapper.playing").querySelector("video").pause();
+        document.querySelector(".video-wrapper.playing").classList.remove("playing");
+        this.classList.add("playing");
+        this.querySelector("video").play();
+    } else if (this.classList.contains("playing")) {
+        document.querySelector(".video-wrapper.playing").querySelector("video").pause();
+        document.querySelector(".video-wrapper.playing").classList.remove("playing");
+    } else {
+        this.classList.add("playing");
+        this.querySelector("video").play();
+    }
+  });
+});
+
+</script>
+
+
+{% schema %}
+  {
+    "name": "Product Video Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "button_txt",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "colr-bg",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "btn-color",
+        "label": "Button Color"
+      },
+      {
+        "type": "color",
+        "id": "btn-txt-color",
+        "label": "Button Text Color"
+      },
+      {
+        "type": "color",
+        "id": "icon",
+        "label": "Play Icon Color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Video Poster"
+          },
+          {
+            "type": "url",
+            "id": "video_link",
+            "label": "Video link"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "range",
+            "id": "range",
+            "label": "Range",
+            "default": 50,
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product Video Slider",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}

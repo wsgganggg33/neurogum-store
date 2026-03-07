@@ -1,0 +1,213 @@
+<div class="section-img-w-txt">
+  <div class="page-width">
+
+    <div class="img-w-txt">
+      <div class="txt-area">
+        <h3>{{ section.settings.heading }}</h3>
+
+
+        <div class="no-dsk">
+          <img loading="lazy" src="{{ section.settings.image | img_url: 'original' }}" width="100%" height="100%">
+        </div>
+
+        
+        <p>{{ section.settings.text }}</p>
+
+        {% if section.settings.btn-txt != blank %}
+        <div class="btn-txt-area">
+          <a href="{{ section.settings.btn-link }}" class="claim-btn smooth-redirect btn-default"><span>{{ section.settings.btn-txt }}</span></a>
+        </div>
+        {% endif %}
+
+        {% if section.settings.rev-text != blank %}
+        <div class="stars-txt">
+          <span class="stars">
+            <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+            <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+            <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+            <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+            <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+          </span>
+          <div class="startext"><p>{{ section.settings.rev-text }}</p></div>  
+        </div>
+        {% endif %}
+        
+      </div>
+  
+      <div class="img-area">
+        <img loading="lazy" src="{{ section.settings.image | img_url: 'original' }}" width="100%" height="100%">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+<style>
+.img-w-txt {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+}
+.section-img-w-txt .txt-area, .section-img-w-txt .img-area {
+  width: 50%;
+  padding: 0 15px;
+  text-align: center;
+}
+.section-img-w-txt h3 {
+  font-size: 49px;
+  line-height: 59px;
+  font-weight: 700;
+  margin: 0;
+}
+.section-img-w-txt .img-w-txt p {
+  font-size: 17px;
+  line-height: 24px;
+  color: #000;
+  margin: 15px 0 0;
+}
+.stars-txt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 25px;
+}
+.stars{
+  display: flex;
+  gap: 1px;
+}
+.stars-txt svg{
+  width: 16px;
+  fill: #7069bc;
+}
+.stars-txt svg g{
+  fill: #7069bc;
+}
+.startext p{
+  margin: 0 !important;
+}
+.btn-txt-area{
+  margin-top: 30px;
+}
+.btn-txt-area a.btn-default {
+  display: inline-block;
+  vertical-align: middle;
+  background: {{ section.settings.btn-bg-color }};
+  font-size: 18px !important;
+  color: {{ section.settings.btn-txt-color }};
+  padding: 22px 50px 22px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  -webkit-box-shadow: 0 0 35px -2px #c2a284;
+  -moz-box-shadow: 0 0 35px -2px #c2a284;
+  box-shadow: 0 0 15px -2px #ccbdff;
+  font-weight: 700;
+  text-decoration: none;
+}
+.btn-txt-area .btn-default span {
+  background: url("{{ 'sl-finger.png' | asset_url }}") left center no-repeat;
+  background-size: 30px auto;
+  padding-left: 40px;
+}
+.no-dsk{
+  display: none;
+}
+
+@media (max-width: 767px){
+  .section-img-w-txt .txt-area, .section-img-w-txt .img-area {
+    width: 100%;
+    padding: 0 15px;
+    text-align: center;
+  }
+  .section-img-w-txt h3 {
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 20px;
+  }
+  .stars{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+  }
+  .stars-txt p{
+    text-align: left;
+  }
+  .img-area{
+    display: none;
+  }
+  .no-dsk{
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px){
+  .section-img-w-txt h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+}
+</style>
+
+
+{% schema %}
+  {
+    "name": "Image with Text 2",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "default": "Talk about your brand",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "rev-text",
+        "label": "Review Text"
+      },
+      {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "btn-link",
+        "label": "Button Link"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "btn-bg-color",
+        "label": "Button BG Color",
+        "default": "#7069bc"
+      },
+      {
+        "type": "color",
+        "id": "btn-txt-color",
+        "label": "Button Text Color",
+        "default": "#fff"
+      }
+    ],
+    "presets": [
+    {
+      "name": "Image with Text 2"
+    }
+   ]
+  }
+{% endschema %}

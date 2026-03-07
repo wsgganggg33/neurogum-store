@@ -1,0 +1,293 @@
+<div class="scrolling-review-{{ section.id }}">
+
+  {%- if section.settings.title != blank -%}
+  <div class="reviews_title">
+    {{ section.settings.title }}
+  </div>
+  {%- endif -%}
+  
+  <div class="scrolling-review-wrapper">
+    <div class="scrolling-rev marquee">
+      <div class="image-holder">
+
+        {%- for block in section.blocks -%}
+         {%- if block.type == "above_review" -%}
+          {%- if block.settings.review != blank -%}
+          <div class="review-item">
+            <div class="review-img">
+              <img loading="lazy" src="{{ block.settings.client-image | img_url: 'original' }}">
+              <div class="item_icon-review">{{ block.settings.rating }}
+                <svg style="width:6px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+              </div>
+            </div>
+            <p>{{ block.settings.review }}</p>
+          </div>
+          {%- endif -%}
+         {%- endif -%}
+        {%- endfor -%}
+                         
+      </div>
+    </div>
+
+    <div class="scrolling-rev marquee">
+      <div class="image-holder">
+
+        {%- for block in section.blocks -%}
+         {%- if block.type == "above_review" -%}
+          {%- if block.settings.review != blank -%}
+          <div class="review-item">
+            <div class="review-img">
+              <img loading="lazy" src="{{ block.settings.client-image | img_url: 'original' }}">
+              <div class="item_icon-review">{{ block.settings.rating }}
+                <svg style="width:6px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+              </div>
+            </div>
+            <p>{{ block.settings.review }}</p>
+          </div>
+          {%- endif -%}
+         {%- endif -%}
+        {%- endfor -%}
+                         
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scrolling-review-wrapper scroll-bottom">
+    <div class="scrolling-rev marquee">
+      <div class="image-holder">
+
+        {%- for block in section.blocks -%}
+         {%- if block.type == "below_review" -%}
+          {%- if block.settings.b-review != blank -%}
+          <div class="review-item">
+            <div class="review-img">
+              <img loading="lazy" src="{{ block.settings.b-client-image | img_url: 'original' }}">
+              <div class="item_icon-review">{{ block.settings.b-rating }}
+                <svg style="width:6px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+              </div>
+            </div>
+            <p>{{ block.settings.b-review }}</p>
+          </div>
+          {%- endif -%}
+         {%- endif -%}
+        {%- endfor -%}
+                         
+      </div>
+    </div>
+
+    <div class="scrolling-rev marquee">
+      <div class="image-holder">
+
+        {%- for block in section.blocks -%}
+         {%- if block.type == "below_review" -%}
+          {%- if block.settings.b-review != blank -%}
+          <div class="review-item">
+            <div class="review-img">
+              <img loading="lazy" src="{{ block.settings.b-client-image | img_url: 'original' }}">
+              <div class="item_icon-review">{{ block.settings.b-rating }}
+                <svg style="width:6px" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve" fill="#ffffff"><g id="SVGRepo_iconCarrier"> <path fill="#ffffff" d="M62.799,23.737c-0.47-1.399-1.681-2.419-3.139-2.642l-16.969-2.593L35.069,2.265 C34.419,0.881,33.03,0,31.504,0c-1.527,0-2.915,0.881-3.565,2.265l-7.623,16.238L3.347,21.096c-1.458,0.223-2.669,1.242-3.138,2.642 c-0.469,1.4-0.115,2.942,0.916,4l12.392,12.707l-2.935,17.977c-0.242,1.488,0.389,2.984,1.62,3.854 c1.23,0.87,2.854,0.958,4.177,0.228l15.126-8.365l15.126,8.365c0.597,0.33,1.254,0.492,1.908,0.492c0.796,0,1.592-0.242,2.269-0.72 c1.231-0.869,1.861-2.365,1.619-3.854l-2.935-17.977l12.393-12.707C62.914,26.68,63.268,25.138,62.799,23.737z"></path> </g></svg>
+              </div>
+            </div>
+            <p>{{ block.settings.b-review }}</p>
+          </div>
+          {%- endif -%}
+         {%- endif -%}
+        {%- endfor -%}
+                         
+      </div>
+    </div>
+
+  </div>
+  
+</div>
+
+
+<style>
+.scrolling-review-{{ section.id }}{
+  padding: 50px 0;
+}
+.reviews_title {
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 50px;
+  margin-top: 0px;
+  padding: 0px 3rem;
+  font-size: 42px;
+}
+.reviews_title span {
+  background: linear-gradient(to right, {{ section.settings.title-color }} 0%,#fed8e0 50%, {{ section.settings.title-color }});
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.scrolling-review-wrapper {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+.scrolling-rev.marquee {
+  position: relative;
+  animation: MarqueeLeft linear 45s infinite;
+  min-width: 2350px !important;
+}
+
+@keyframes MarqueeLeft {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+.scrolling-review-wrapper .image-holder {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+.scroll-bottom .image-holder {
+  transform: translateX(-230px);
+}
+.review-item {
+  min-width: 420px;
+  min-height: 95px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 10px 50px 10px 25px;
+  margin: 30px 25px;
+  box-shadow: 4px 4px 20px {{ section.settings.shadow-color }};
+  border-radius: 100px;
+}
+.review-item img {
+  border-radius: 50%;
+  max-width: unset;
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  position: relative;
+}
+.review-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item_icon-review {
+  font-size: 8px;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: linear-gradient(to right, {{ section.settings.title-color }} 0%,#fed8e0 50%, {{ section.settings.title-color }});
+}
+.review-item p{
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 0;
+  color: #0b1128;
+}
+
+@media only screen and (max-width: 768px){
+  .reviews_title {
+    padding: 0px 2rem;
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+}
+</style>
+
+
+{% schema %}
+  {
+    "name": "Scrolling Reviews",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Title",
+        "info": "Use the <span>HELLO</span> Tag for show the different Color"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "title-color",
+        "label": "Title Different Color",
+        "default": "#f86d83"
+      },
+      {
+        "type": "color",
+        "id": "shadow-color",
+        "label": "Shadow Color",
+        "default": "#ffe0e6"
+      }
+    ],
+    "blocks": [
+     {
+      "type": "above_review",
+      "name": "Above Review",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "client-image",
+          "label": "Client Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "review",
+          "label": "Review"
+        },
+        {
+          "type": "number",
+          "id": "rating",
+          "label": "Rating",
+          "default": 5
+        }
+      ]
+     },
+     {
+      "type": "below_review",
+      "name": "Below Review",
+      "limit": 5,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "b-client-image",
+          "label": "Client Image"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "b-review",
+          "label": "Review"
+        },
+        {
+          "type": "number",
+          "id": "b-rating",
+          "label": "Rating",
+          "default": 5
+        }
+      ]
+     }
+    ],
+    "presets": [
+      {
+        "name": "Scrolling Reviews"
+      }
+    ]
+  }
+{% endschema %}

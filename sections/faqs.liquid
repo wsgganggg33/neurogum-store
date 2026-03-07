@@ -1,0 +1,158 @@
+<section class="faq-section-{{ section.id }}">
+  <div class="page-width">
+    <div class="faq-heading">
+      <h3>{{ section.settings.title }}</h3>
+    </div>
+
+    {%- for block in section.blocks -%}
+      <button class="faq-question">{{ block.settings.faq-ques }}</button>
+      <div class="faq-content">
+        {{ block.settings.faq-content }}
+      </div>
+    {%- endfor -%}
+    
+  </div>
+</section>
+
+
+
+<style>
+.faq-section-{{ section.id }} {
+  background-color: {{ section.settings.bg-faq-color }};
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.faq-section-{{ section.id }} .faq-heading h3 {
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+}
+.faq-section-{{ section.id }} .faq-question {
+  background-color: transparent;
+  color: {{ section.settings.faq-ques-color }};
+  cursor: pointer;
+  padding: 25px 20px;
+  margin: 0;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.faq-section-{{ section.id }} .faq-question:after {
+  content: '\002B';
+  color: {{ section.settings.faq-ques-color }};
+  font-weight: bold;
+  font-size: 25px;
+  float: right;
+  margin-left: 5px;
+}
+.faq-section-{{ section.id }} .active:after {
+  content: "\2212";
+  color: {{ section.settings.faq-ques-color }};
+}
+.faq-section-{{ section.id }} .faq-content {
+  padding: 0 20px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+}  
+
+@media (max-width: 767px){
+  .faq-section-{{ section.id }} .faq-heading h3 {
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .faq-section-{{ section.id }} .faq-question {
+    padding: 20px 0px;
+    font-size: 17px;
+  }
+  .faq-section-{{ section.id }} .faq-content {
+    padding: 0 5px;
+  }
+  .faq-section-{{ section.id }} .faq-content p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  .faq-section-{{ section.id }} .faq-question:after {
+    font-size: 20px;
+  }
+}
+</style>
+
+
+
+<script>
+var acc = document.getElementsByClassName("faq-question");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "FAQ's",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "bg-faq-color",
+        "label": "Background Color",
+        "default": "#FAFAFA"
+      },
+      {
+        "type": "color",
+        "id": "faq-ques-color",
+        "label": "faq Color",
+        "default": "#000000"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "faq-ques",
+            "label": "Question"
+          },
+          {
+            "type": "richtext",
+            "id": "faq-content",
+            "label": "Content"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ's",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,266 @@
+<section class="pro_vid_img_sec">
+  <div class="page-width">
+    <div class="pro_vid_img_row">
+      
+      
+      <div class="vid_img_box">        
+       <video class="b-lazy b-loaded" autoplay="true" loop="true" muted="" playsinline="" controlslist="nodownload" src="{{ section.settings.video-url }}"></video>        
+      </div>
+      
+      <div class="text_box">         
+        <h3>{{ section.settings.heading }}</h3>
+               
+        <div class="pro_icon_text">
+        {%- for block in section.blocks -%}
+          <div class="item">
+            
+            <div class="progress_icn">
+              <div class="icon_progress" role="progressbar" aria-valuenow="{{ block.settings.percentage }}" aria-valuemin="0" aria-valuemax="100" style="--value: {{ block.settings.percentage }}"></div>
+            </div>         
+            
+            <div class="text">
+              {{ block.settings.text }}
+            </div>
+            
+          </div>
+        {%- endfor -%}                
+        </div> 
+        
+        <div class="b-product-card__benefits-asterisk">
+          {{ section.settings.bottom-txt }}
+        </div>
+         
+        <div class="vid_img_btn"><a class="btn" href="{{ section.settings.btn-url }}"><span>{{ section.settings.btn-txt }}</span></a></div>
+                                                                                         
+  
+      </div>
+      
+      </div>
+  
+  </div>
+</section>
+
+
+
+<style>
+.pro_vid_img_sec {
+  background-color: {{ section.settings.bg-color }};
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.pro_vid_img_row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.pro_vid_img_row .vid_img_box {
+  width: 50%;
+  padding: 0 20px;
+  position: relative;
+}
+.pro_vid_img_row .text_box {
+  width: 50%;
+  padding: 0 40px;
+}
+.pro_vid_img_sec .vid_img_box video {
+  width: 100%;
+  border-radius: 25px;
+}
+.pro_vid_img_row .text_box h3 {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-top: 0;
+  color: #2e2a39;
+  margin-bottom: 10px;
+}
+.pro_icon_text {
+  margin-bottom: 10px;
+}
+.pro_vid_img_sec .item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #e8e7e7;
+}
+.pro_vid_img_sec .text_box .item .text {
+  max-width: 295px;
+  margin-left: 50px;
+}
+.pro_vid_img_sec .text_box .icon_progress {
+  width: 70px;
+  height: 70px;
+}
+  
+@keyframes progress {
+  0% {
+    --percentage: 0;
+  }
+  100% {
+    --percentage: var(--value);
+  }
+}
+  
+[role=progressbar] {
+  --percentage: var(--value);
+  --primary: {{ section.settings.btn-color }};
+  --secondary: #e3d2fd;
+  --size: 300px;
+  animation: progress 2s .5s forwards;
+  width: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid !important;
+  place-items: center;
+}
+[role=progressbar]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%),var(--secondary) 0);
+  mask: radial-gradient(white 55%,transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%,#000 0);
+  -webkit-mask-mode: alpha;
+}
+[role=progressbar]:after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+  font-size: 23px;
+  color: var(--primary);
+}
+.b-product-card__benefits-asterisk p {
+  font-size: 14px;
+  line-height: 1.2;
+  margin: 10px 0 20px;
+}
+a.btn {
+  display: inline-block;
+  vertical-align: middle;
+  background: {{ section.settings.btn-color }};
+  font-size: 17px !important;
+  color: {{ section.settings.btn-txt-color }};
+  padding: 10px 35px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 0px;
+  text-decoration: none;
+}
+.vid_img_btn a.btn span {
+  background: url("{{ 'sl-finger.png' | asset_url }}") left center no-repeat;
+  background-size: 30px auto;
+  padding-left: 40px;
+}
+
+@media (max-width: 767px){
+  .pro_vid_img_sec {
+    padding: 30px 0;
+    margin-top: 0;
+  }
+  .pro_vid_img_row .vid_img_box {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  .pro_vid_img_row .text_box {
+    width: 100%;
+    padding: 20px 10px;
+    margin: 0;
+  }
+  .pro_vid_img_row .text_box h3 {
+    font-size: 36px;
+    line-height: 41px;
+  }
+}
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Video with Text",
+    "settings": [
+      {
+        "type": "url",
+        "id": "video-url",
+        "label": "Video Link"
+      },
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "default": "Image with text",
+        "label": "Title"
+      },    
+      {
+        "type": "richtext",
+        "id": "bottom-txt",
+        "label": "Bottom Text"
+      },
+      {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Button Text"
+      },
+      {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Button Link"
+      },
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "btn-color",
+        "label": "Button Color"
+      },
+      {
+        "type": "color",
+        "id": "btn-txt-color",
+        "label": "Button Text Color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "range",
+            "id": "percentage",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "default": 50,
+            "unit": "px",
+            "label": "Set Percentage"
+          },
+          {
+            "type": "inline_richtext",
+            "id": "text",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "Video with Text",
+      "blocks": [ ]
+    }
+   ]
+  }
+{% endschema %}

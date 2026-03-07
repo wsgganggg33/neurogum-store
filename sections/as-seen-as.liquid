@@ -1,0 +1,229 @@
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.css"/>
+<!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick-theme.css"/>-->
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>
+
+
+
+<section class="as-seen-logo as-feat-section">  
+  <div class="page-width"> 
+   <div class="main-wrap">
+     <h2>As featured in</h2> 
+     
+    <div class="main-logo-section">  
+
+      {%- for block in section.blocks -%}
+        
+      <div class="logo-section">
+        <img loading="lazy" src="{{ block.settings.image | img_url: 'original' }}">          
+      </div> 
+
+      {%- endfor -%}
+         
+    </div>
+   </div>  
+  </div>  
+</section>
+
+
+<style>
+.as-feat-section {
+  background: #fff;
+  overflow: hidden;
+  padding: 25px 0 0;
+}
+.as-feat-section .main-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  padding: 30px 0;
+  background: {{ section.settings.bg-color }};
+}
+.as-feat-section .main-wrap h2 {
+  color: {{ section.settings.txt-color }};
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 600;
+  margin: 0;
+  width: 20%;
+  padding: 0 20px;
+  line-height: 1;
+  font-size: 24px;
+  text-align: center;
+}
+.as-feat-section .main-logo-section {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.as-feat-section .main-logo-section .logo-section {
+  width: 25%;
+  padding: 0 20px;
+  text-align: center;
+}
+.as-feat-section .main-logo-section .logo-section img {
+  max-width: 60%;
+  margin: 0 auto;
+  height: 100%;
+  object-fit: cover;
+}
+
+.as-feat-section .slick-prev, .as-feat-section .slick-next{
+  display: none !important;
+}
+
+
+@media only screen and (max-width: 1280px){
+  .as-feat-section .main-wrap h2 {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+  .as-feat-section .main-logo-section .logo-section {
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 991px){
+  .as-feat-section .main-wrap h2 {
+    width: 100%;
+    margin: 0 0 30px;
+  }
+  .as-feat-section .main-logo-section {
+    width: 100%;
+  }
+}
+@media (max-width: 767px){
+ .as-feat-section .main-logo-section .logo-section img {
+    max-width: 60%;
+    width: 100%;
+  } 
+}
+</style>
+
+
+
+<script>
+
+$(document).ready(function() {
+  var slickSettings; // Define Slick slider settings
+
+  // Define the breakpoint where you want the slider to start
+  var breakpoint = 999; // Change this value as needed
+
+  // Function to initialize the Slick slider
+  function initSlider() {
+    // Initialize the Slick slider with your settings
+    $('.main-logo-section').slick(slickSettings);
+  }
+
+  // Function to destroy the Slick slider
+  function destroySlider() {
+    // If the slider has been initialized, destroy it
+    if ($('.main-logo-section').hasClass('slick-initialized')) {
+      $('.main-logo-section').slick('unslick');
+    }
+  }
+
+  // Function to handle screen size changes
+  function handleWindowSize() {
+    if (window.innerWidth < breakpoint) {
+      // If the window is smaller than the breakpoint, initialize the slider
+      initSlider();
+    } else {
+      // If the window is larger than or equal to the breakpoint, destroy the slider
+      destroySlider();
+    }
+  }
+
+  // Set the initial state based on the screen size
+  handleWindowSize();
+
+  // Attach a resize event listener to handle screen size changes
+  $(window).on('resize', function() {
+    handleWindowSize();
+  });
+
+  // Define your Slick slider settings here
+  slickSettings = {
+    dots: false,
+    arrows: false,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 4,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 2,
+          slidesToScroll: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  };
+});
+
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "As Seen As",
+    "max_blocks": 4,
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "heading",
+        "default": "Image with text",
+        "label": "t:sections.image-with-text.blocks.heading.settings.heading.label"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Background Color"
+      },
+      {
+        "type": "color",
+        "id": "txt-color",
+        "label": "Text Color"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          }
+        ]
+      }
+    ],
+    "presets": [
+    {
+      "name": "As Seen As",
+      "blocks": [ ]
+    }
+   ]
+  }
+{% endschema %}

@@ -1,0 +1,200 @@
+<section class="pro_tab_section">
+  <div class="page-width"> 
+    <div class="product_cntent_section">
+      
+    <div class="section-header tab_section">  
+      <h3>{{ section.settings.title }}</h3>      
+    </div>
+  
+    <div class="tab_row">     
+      <ul class="tab_nav">
+        {%- for block in section.blocks -%}
+          <a class="tablinks" onclick="openTab(event, '{{ block.settings.link_txt }}')">{{ block.settings.link_txt }}</a>
+        {%- endfor -%}   
+      </ul>
+      
+      <div class="tab_content">
+
+        {%- for block in section.blocks -%}
+        <div id="{{ block.settings.link_txt }}" class="tabcontent">
+          <video class="content b-lazy b-loaded" autoplay="true" loop="true" muted="" playsinline="" controlslist="nodownload" src="{{ block.settings.video_link }}"></video>
+        </div>
+        {%- endfor -%}
+        
+      </div>
+
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+.pro_tab_section {
+  padding: 50px 0;
+  position: relative;
+}
+.product_cntent_section {
+  position: relative;
+}
+.pro_tab_section .tab_section {
+  max-width: 475px;
+  margin-bottom: 30px;
+}
+.pro_tab_section h3 {
+  font-size: 40px;
+  color: #000;
+}
+.pro_tab_section h3 em {
+  font-weight: 400;
+  font-style: italic;
+}
+.pro_tab_section .tab_nav {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  bottom: auto;
+  margin: 0;
+  padding: 5px;
+  border: 1px solid #dedede;
+  border-radius: 12px;
+  display: flex;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.pro_tab_section .tab_nav .tablinks {
+  padding: 6px 20px;
+  cursor: pointer;
+}
+.pro_tab_section .tablinks.active {
+  background-color: {{ section.settings.link-color }};
+  border-radius: 8px;
+  color: #fff;
+}
+.tabcontent {
+  padding-top: 20px;
+  position: relative;
+  display: none;
+}
+.pro_tab_section .tabcontent video {
+  width: 100%;
+  border-radius: 25px;
+}
+  
+@media (max-width: 767px){
+  .pro_tab_section {
+    padding: 50px 0 120px;
+  }
+  .product_cntent_section {
+    padding: 0 20px;
+  }
+  .pro_tab_section h3 {
+    font-size: 30px;
+    margin-top: 0;
+  }
+  .tab_row{
+    position: relative;
+  }
+  .pro_tab_section .tab_nav {
+    position: absolute;
+    bottom: -80px !important;
+    left: 0;
+    margin: 0;
+    padding: 5px;
+    border: 1px solid #dedede;
+    border-radius: 12px;
+    display: flex;
+    top: inherit;
+    z-index: 2;
+    right: 0;
+  }
+  .pro_tab_section .tab_nav .tablinks {
+    padding: 6px 12px;
+  }
+  .pro_tab_section .tabcontent video {
+    width: 100%;
+    border-radius: 25px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: 300px;
+  }
+}
+</style>
+
+
+
+
+<script>
+
+const firstItem = document.querySelector('.tablinks');
+firstItem.classList.add('active');
+document.querySelector('.tabcontent').style.display = "block";
+  
+function openTab(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+
+
+
+{% schema %}
+  {
+    "name": "Video Tabs",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "link-color",
+        "label": "Link Color",
+        "default": "#7069bc"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "video",
+        "name": "Video",
+        "settings": [
+          {
+            "type": "text",
+            "id": "link_txt",
+            "label": "Link Text"
+          },
+          {
+            "type": "url",
+            "id": "video_link",
+            "label": "Video link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video Tabs",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}

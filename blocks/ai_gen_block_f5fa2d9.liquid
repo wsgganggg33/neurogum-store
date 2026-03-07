@@ -1,0 +1,357 @@
+{% doc %}
+  @prompt
+    Headline (H1):
+    Better Sleep Starts Here
+    
+    Paragraph:
+    “Naturally fall asleep faster, stay asleep longer, and wake up refreshed—with an all-natural formula designed to support deep, restorative rest.”
+    
+    Styling Instructions:
+    
+    White background
+    
+    Large bold black headline
+    
+    Medium gray paragraph
+    
+    Left-aligned text
+    
+    Clean, premium spacing (Apple-style)
+    
+    No borders
+    
+    PART 2 — Image Feature Card (Use the image I uploaded)
+    
+    Use my uploaded image as the hero visual.
+    
+    Below the image, add a dark text box:
+    
+    Title (H2):
+    FALL ASLEEP FASTER
+    
+    Description:
+    “Natural ingredients help calm your mind and body so you can drift off with ease—no more tossing or turning.”
+    
+    Styling Instructions:
+    
+    Image full width inside the card
+    
+    Text box background: solid black
+    
+    Text color: white
+    
+    Card has soft shadow + rounded corners
+    
+    Centered layout
+    
+    Mobile-optimized
+    
+    GLOBAL STYLE INSTRUCTIONS
+    
+    Keep everything minimalist and premium
+    
+    Layout similar to high-end wellness brands
+    
+    Extra spacing for a clean luxury look
+    
+    No extra colors—just black, white, and subtle shadows
+    
+    Make it responsive for all screen sizes
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-image-feature-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    padding: {{ block.settings.section_padding }}px;
+  }
+
+  .ai-image-feature__card-{{ ai_gen_id }} {
+    background-color: #ffffff;
+    border-radius: {{ block.settings.card_radius }}px;
+    overflow: hidden;
+    box-shadow: 0 {{ block.settings.shadow_vertical }}px {{ block.settings.shadow_blur }}px rgba(0, 0, 0, {{ block.settings.shadow_opacity }});
+    transition: transform 0.3s ease;
+  }
+
+  .ai-image-feature__image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ai-image-feature__image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .ai-image-feature__image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-image-feature__image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    opacity: 0.3;
+  }
+
+  .ai-image-feature__text-box-{{ ai_gen_id }} {
+    background-color: {{ block.settings.text_box_bg }};
+    padding: {{ block.settings.text_box_padding }}px;
+    text-align: center;
+  }
+
+  .ai-image-feature__title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 {{ block.settings.text_spacing }}px 0;
+    line-height: 1.3;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .ai-image-feature__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0;
+    line-height: 1.6;
+    max-width: {{ block.settings.description_max_width }}px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-image-feature-{{ ai_gen_id }} {
+      padding: {{ block.settings.section_padding | times: 0.6 }}px;
+    }
+
+    .ai-image-feature__text-box-{{ ai_gen_id }} {
+      padding: {{ block.settings.text_box_padding | times: 0.7 }}px;
+    }
+
+    .ai-image-feature__title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.7 }}px;
+      margin-bottom: {{ block.settings.text_spacing | times: 0.7 }}px;
+    }
+
+    .ai-image-feature__description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-image-feature-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-image-feature__card-{{ ai_gen_id }}">
+    <div class="ai-image-feature__image-wrapper-{{ ai_gen_id }}">
+      {% if block.settings.image %}
+        <img
+          src="{{ block.settings.image | image_url: width: 1600 }}"
+          alt="{{ block.settings.image.alt | escape }}"
+          loading="lazy"
+          width="{{ block.settings.image.width }}"
+          height="{{ block.settings.image.height }}"
+          class="ai-image-feature__image-{{ ai_gen_id }}"
+        >
+      {% else %}
+        <div class="ai-image-feature__image-placeholder-{{ ai_gen_id }}">
+          {{ 'image' | placeholder_svg_tag }}
+        </div>
+      {% endif %}
+    </div>
+
+    <div class="ai-image-feature__text-box-{{ ai_gen_id }}">
+      {% if block.settings.title != blank %}
+        <h2 class="ai-image-feature__title-{{ ai_gen_id }}">
+          {{ block.settings.title }}
+        </h2>
+      {% endif %}
+
+      {% if block.settings.description != blank %}
+        <div class="ai-image-feature__description-{{ ai_gen_id }}">
+          {{ block.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image feature card",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "label": "Title",
+      "default": "FALL ASLEEP FASTER"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Natural ingredients help calm your mind and body so you can drift off with ease—no more tossing or turning.</p>"
+    },
+    {
+      "type": "header",
+      "content": "Text box style"
+    },
+    {
+      "type": "color",
+      "id": "text_box_bg",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 18,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 14,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "text_spacing",
+      "min": 10,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Space between title and description",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "text_box_padding",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Text box padding",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "description_max_width",
+      "min": 300,
+      "max": 800,
+      "step": 50,
+      "unit": "px",
+      "label": "Description max width",
+      "default": 600
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Corner radius",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "shadow_vertical",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Shadow vertical offset",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "min": 0,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Shadow blur",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "min": 0,
+      "max": 0.5,
+      "step": 0.1,
+      "label": "Shadow opacity",
+      "default": 0.1
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1000
+    },
+    {
+      "type": "range",
+      "id": "section_padding",
+      "min": 20,
+      "max": 100,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 40
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image feature card"
+    }
+  ]
+}
+{% endschema %}

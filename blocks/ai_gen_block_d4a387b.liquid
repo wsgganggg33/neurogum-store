@@ -1,0 +1,424 @@
+{% doc %}
+  @prompt
+    Create a two-column ingredient highlight section titled “A Simple and Natural Formulation”.
+    
+    Each ingredient should be displayed inside a soft, light-beige rounded rectangle card, with:
+    
+    Ingredient image at the top
+    
+    Bold ingredient name in all caps
+    
+    Short benefit description underneath
+    
+    Clean, minimal, premium wellness aesthetic
+    
+    Lots of white space
+    
+    Modern sans-serif font
+    
+    Layout exactly like the reference image
+    
+    Add these two ingredient blocks:
+    
+    Ingredient Card 1
+    
+    Image: Valerian root photo
+    Title: VALERIAN
+    Description:
+    Improves sleep quality & relaxation
+    
+    Ingredient Card 2
+    
+    Image: Lavender flower photo
+    Title: LAVENDER
+    Description:
+    Calms anxiety & relaxes the mind, Create a two-column, side-by-side ingredient section.
+    
+    Each ingredient should appear inside a rounded rectangle card with a soft beige (#F4EFE7) background.
+    
+    At the top of each card, add an ingredient image placeholder (square).
+    
+    Under the image, include the ingredient name in bold, uppercase, centered text.
+    
+    Below that, add a short benefit description in smaller, centered text.
+    
+    Use this exact content:
+    
+    Left Card
+    
+    Title: VALERIAN
+    
+    Description: Improves sleep quality & relaxation
+    
+    Right Card
+    
+    Title: LAVENDER
+    
+    Description: Calms anxiety & relaxes the mind
+    
+    Keep spacing clean, minimal, and modern. Make sure both cards sit side-by-side in the same row on mobile and desktop, with equal width and padding, i want you to create 2 cards below this aswell 
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-ingredient-section-{{ ai_gen_id }} {
+    padding: 60px 20px;
+    background-color: {{ block.settings.section_background }};
+  }
+
+  .ai-ingredient-container-{{ ai_gen_id }} {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .ai-ingredient-title-{{ ai_gen_id }} {
+    text-align: center;
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 400;
+    margin: 0 0 50px;
+    color: {{ block.settings.title_color }};
+    letter-spacing: 0.5px;
+  }
+
+  .ai-ingredient-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .ai-ingredient-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_background }};
+    border-radius: {{ block.settings.card_radius }}px;
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ai-ingredient-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    max-width: {{ block.settings.image_size }}px;
+    margin-bottom: 25px;
+  }
+
+  .ai-ingredient-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: {{ block.settings.image_radius }}px;
+  }
+
+  .ai-ingredient-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1;
+    background-color: #e8e4dc;
+    border-radius: {{ block.settings.image_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ai-ingredient-image-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-ingredient-name-{{ ai_gen_id }} {
+    font-size: {{ block.settings.ingredient_name_size }}px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 0 15px;
+    color: {{ block.settings.ingredient_name_color }};
+  }
+
+  .ai-ingredient-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_size }}px;
+    line-height: 1.6;
+    color: {{ block.settings.description_color }};
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-ingredient-section-{{ ai_gen_id }} {
+      padding: 40px 16px;
+    }
+
+    .ai-ingredient-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.75 }}px;
+      margin-bottom: 30px;
+    }
+
+    .ai-ingredient-grid-{{ ai_gen_id }} {
+      gap: 20px;
+    }
+
+    .ai-ingredient-card-{{ ai_gen_id }} {
+      padding: 30px 20px;
+    }
+
+    .ai-ingredient-name-{{ ai_gen_id }} {
+      font-size: {{ block.settings.ingredient_name_size | times: 0.85 }}px;
+    }
+
+    .ai-ingredient-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-ingredient-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-ingredient-container-{{ ai_gen_id }}">
+    {% if block.settings.section_title != blank %}
+      <h2 class="ai-ingredient-title-{{ ai_gen_id }}">{{ block.settings.section_title }}</h2>
+    {% endif %}
+
+    <div class="ai-ingredient-grid-{{ ai_gen_id }}">
+      {% for i in (1..4) %}
+        {% liquid
+          assign ingredient_name_key = 'ingredient_' | append: i | append: '_name'
+          assign ingredient_description_key = 'ingredient_' | append: i | append: '_description'
+          assign ingredient_image_key = 'ingredient_' | append: i | append: '_image'
+
+          assign ingredient_name = block.settings[ingredient_name_key]
+          assign ingredient_description = block.settings[ingredient_description_key]
+          assign ingredient_image = block.settings[ingredient_image_key]
+        %}
+
+        <div class="ai-ingredient-card-{{ ai_gen_id }}">
+          <div class="ai-ingredient-image-wrapper-{{ ai_gen_id }}">
+            {% if ingredient_image %}
+              <img
+                src="{{ ingredient_image | image_url: width: 600 }}"
+                alt="{{ ingredient_name | escape }}"
+                loading="lazy"
+                width="600"
+                height="600"
+                class="ai-ingredient-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-ingredient-image-placeholder-{{ ai_gen_id }}">
+                {{ 'product-1' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          {% if ingredient_name != blank %}
+            <h3 class="ai-ingredient-name-{{ ai_gen_id }}">{{ ingredient_name }}</h3>
+          {% endif %}
+
+          {% if ingredient_description != blank %}
+            <p class="ai-ingredient-description-{{ ai_gen_id }}">{{ ingredient_description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Ingredient highlight",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section title",
+      "default": "A Simple and Natural Formulation"
+    },
+    {
+      "type": "color",
+      "id": "section_background",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 32
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card background",
+      "default": "#F4EFE7"
+    },
+    {
+      "type": "range",
+      "id": "card_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "image_size",
+      "min": 100,
+      "max": 400,
+      "step": 20,
+      "unit": "px",
+      "label": "Image size",
+      "default": 200
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "ingredient_name_color",
+      "label": "Ingredient name color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "ingredient_name_size",
+      "min": 14,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Ingredient name size",
+      "default": 18
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Description size",
+      "default": 15
+    },
+    {
+      "type": "header",
+      "content": "Ingredient 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "ingredient_1_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "ingredient_1_name",
+      "label": "Name",
+      "default": "VALERIAN"
+    },
+    {
+      "type": "textarea",
+      "id": "ingredient_1_description",
+      "label": "Description",
+      "default": "Improves sleep quality & relaxation"
+    },
+    {
+      "type": "header",
+      "content": "Ingredient 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "ingredient_2_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "ingredient_2_name",
+      "label": "Name",
+      "default": "LAVENDER"
+    },
+    {
+      "type": "textarea",
+      "id": "ingredient_2_description",
+      "label": "Description",
+      "default": "Calms anxiety & relaxes the mind"
+    },
+    {
+      "type": "header",
+      "content": "Ingredient 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "ingredient_3_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "ingredient_3_name",
+      "label": "Name",
+      "default": "CHAMOMILE"
+    },
+    {
+      "type": "textarea",
+      "id": "ingredient_3_description",
+      "label": "Description",
+      "default": "Promotes relaxation & better sleep"
+    },
+    {
+      "type": "header",
+      "content": "Ingredient 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "ingredient_4_image",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "ingredient_4_name",
+      "label": "Name",
+      "default": "PASSIONFLOWER"
+    },
+    {
+      "type": "textarea",
+      "id": "ingredient_4_description",
+      "label": "Description",
+      "default": "Reduces stress & improves sleep"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ingredient highlight"
+    }
+  ]
+}
+{% endschema %}

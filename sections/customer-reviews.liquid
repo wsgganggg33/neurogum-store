@@ -1,0 +1,264 @@
+<div class="customer-review_section"> 
+  <div class="page-width">
+        
+    <section class="review_sec product_custmer_review">
+      <div class="section_header text-center"> 
+        {% if section.settings.title != blank %}
+        <span class="stars">
+          <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+          <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+          <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+          <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+          <svg viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="add" transform="translate(18.640071, 18.640071)"> <polygon id="Star" points="237.359929 344.171897 97.8432633 429.388145 135.775711 270.366642 11.6172218 164.011677 174.577429 150.947232 237.359929 3.90798505e-14 300.142429 150.947232 463.102636 164.011677 338.944147 270.366642 376.876595 429.388145"> </polygon> </g> </g> </g></svg>
+        </span>
+        {% endif %}
+      
+      	<h2 class="section-title review_heading">{{ section.settings.title }}</h2>      
+        <div class="givcont">{{ section.settings.text }}</div>   
+      </div>
+      
+      <div class="review_main review_main_slider">
+        {%- for block in section.blocks -%}
+        <div class="review_columna">
+
+          {% if block.settings.image != blank %}
+          <div class="img_result">
+            <img loading="lazy" src="{{ block.settings.image | img_url: 'original' }}">
+          </div>  
+          {% endif %}
+             
+          <div class="review_text">{{ block.settings.text }}</div> 
+              
+          <div class="review_caption">   
+            {% if block.settings.author-img != blank %}
+              <img loading="lazy" src="{{ block.settings.author-img | img_url: 'original' }}">   
+            {% endif %}
+            <div class="review_name"> 
+              <div>{{ block.settings.author-name }}</div>
+            </div>      
+          </div>
+          
+        </div>
+        {%- endfor -%}  
+      </div>
+    
+      
+    </section>
+  </div>
+</div>
+    
+
+<style>
+.customer-review_section {
+  padding: 50px 0;
+}
+.product_custmer_review .section_header.text-center {
+  margin-bottom: 50px !important;
+  text-align: center;
+}
+.customer-review_section h2.section-title.review_heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+.product_custmer_review .givcont {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+.customer-review_section .stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin: 10px;
+}
+.customer-review_section .stars svg{
+  width: 18px;
+}
+.customer-review_section .stars svg, .customer-review_section .stars svg g {
+  fill: {{ section.settings.bg-color }};
+}
+.product_custmer_review .review_columna {
+  padding: 0 15px;
+}
+.product_custmer_review .review_main_slider .img_result img {
+  max-width: 100%;
+  border-radius: 25px;
+}
+.product_custmer_review .review_text p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 20px;
+}
+.review_main .review_caption {
+  display: flex;
+  margin: 1.35rem auto;
+  text-align: left;
+  justify-content: center;
+}
+.review_main .review_caption img {
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: 0.75rem;
+  border-radius: 50%;
+}
+.review_main .review_caption .review_name div {
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+}
+.review_main_slider .slick-prev, .review_main_slider .slick-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 2.5rem;
+  line-height: 0;
+  background: {{ section.settings.bg-color }};
+  position: absolute;
+  top: 50% !important;
+  transform: translatey(-50%);
+  font-size: 0;
+  border: none;
+  box-shadow: none;
+  z-index: 2;
+}
+.review_main_slider button.slick-prev {
+  left: 0;
+}
+.review_main_slider button.slick-next {
+  right: 0;
+}
+.review_main_slider .slick-prev:before, .review_main_slider .slick-next:before {
+  content: "\f104";
+  font: 14px/1 FontAwesome;
+  width: 50px;
+  height: 50px;
+  font-size: 27px;
+  line-height: 1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  color: {{ section.settings.txt-color }};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.review_main_slider .slick-prev:before {
+  content: "\f104";
+}
+.review_main_slider .slick-next:before {
+  content: "\f105";
+}
+@media (max-width: 767px){
+  .customer-review_section {
+    padding: 60px 0 30px;
+  }
+  .customer-review_section h2.section-title.review_heading {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .product_custmer_review .givcont {
+    font-size: 15px;
+  }
+  .product_custmer_review .review_columna {
+    padding: 0 15px;
+  }
+}
+</style>
+
+
+<script>
+  $('.review_main_slider').slick({
+    dots: false,
+    arrows: true,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 3,
+    responsive: [
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  });
+</script>
+
+
+
+{% schema %}
+  {
+    "name": "Customer Reviews",
+    "settings": [
+      {
+        "type": "inline_richtext",
+        "id": "title",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "text",
+        "label": "Text"
+      },
+      {
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "bg-color",
+        "label": "Arrow/Stars Color",
+        "default": "#7069BC"
+      },
+      {
+        "type": "color",
+        "id": "txt-color",
+        "label": "Arrow Color",
+        "default": "#ffffff"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Review",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Review Text"
+          },
+          {
+            "type": "image_picker",
+            "id": "author-img",
+            "label": "Author Image"
+          },
+          {
+            "type": "text",
+            "id": "author-name",
+            "label": "Author Name"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Customer Reviews",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}

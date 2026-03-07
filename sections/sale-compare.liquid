@@ -1,0 +1,290 @@
+<section class="pro_compare sale_compare_section">
+  <div class="page-width">
+    <div class="compare-box">
+      
+      <div class="com_left-side">
+        <div class="com_left-side_box">       
+        <h2 class="com_heading">{{ section.settings.heading }}</h2>           
+        <div class="com_text">{{ section.settings.text }}</div>        
+        </div>
+      </div>
+      
+      <div class="table_content">
+      <div class="top_table_content">
+        <table>
+          <tbody> 
+            <tr>
+              <th class="left_top_content">&nbsp;</th>
+              <th class="forchics tabletile border-leftradius border-rightradius right_content">                
+                <div class="forchicsimage table_right_content">
+                  <img loading="lazy" src="{{ section.settings.logo | img_url: 'original' }}">
+                </div>                 
+              </th>
+              <th class="text-center">                
+                <p class="bigtext">{{ section.settings.other }}</p>               
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        
+      <div class="com_right-side">
+        <table>
+          <tbody>
+
+            {%- for block in section.blocks -%}
+            <tr class="tablelooprow">            
+              <td class="tabletile">{{ block.settings.title }}</td>
+              
+               <td class="forchics">
+                 {% if block.settings.tick %}
+                   <img loading="lazy" src="https://cdn.accentuate.io/7355514814639/21145836322991/check_1check-v1664802852521.png?33x27">
+                 {% else %}  
+                   <img loading="lazy" src="https://cdn.accentuate.io/7355514814639/21145836388527/cross-v1664802856746.svg?30x30">
+                 {% endif %}
+               </td>
+              
+               <td class="tabletile other_content">
+                 {% if block.settings.cross %}
+                   <img loading="lazy" src="https://cdn.accentuate.io/7355514814639/21145836388527/cross-v1664802856746.svg?30x30">          
+                 {% else %}  
+                   <img loading="lazy" src="https://cdn.accentuate.io/7355514814639/21145836322991/check_1check-v1664802852521.png?33x27">
+                 {% endif %}
+               </td>
+            </tr>
+            {%- endfor -%}            
+            
+        </tbody>
+        </table>
+   
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+
+<style>
+.sale_compare_section {
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+.compare-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 0 40px;
+}
+.pro_compare .com_left-side, .pro_compare .table_right_content, .pro_compare .table_content {
+  width: 50%;
+}
+.com_left-side_box{
+  text-align: center;
+}
+.com_left-side h2.com_heading {
+  font-size: 48px;
+  line-height: 60px;
+  text-transform: initial;
+  letter-spacing: 0;
+  max-width: 404px;
+  width: 100%;
+  margin: auto auto 15px;
+  text-align: center;
+  color: #2e2a39;
+  font-weight: 700;
+}
+.top_table_content {
+  width: 100%;
+}
+.compare_section td, th {
+  border: none;
+}
+.sale_compare_section table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 0;
+  box-shadow: none;
+}
+.top_table_content th.left_top_content {
+  width: 50%;
+}
+.top_table_content th.forchics.tabletile.border-leftradius.border-rightradius.right_content {
+  width: 25% !important;
+  text-align: -webkit-center;
+}
+.sale_compare_section .compare-box th p {
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 600;
+}
+.compare-box .com_right-side {
+  width: 100%;
+  padding-left: 20px;
+}
+.com_right-side table {
+  margin-bottom: 0;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 19px 18px 11px #e3e8ec73;
+  overflow: hidden;
+}
+.pro_compare .compare-box tr.tablelooprow {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid rgba(246,246,244,.44);
+  border-radius: 3px 0 0;
+}
+.compare-box .tablelooprow td {
+  border: none;
+}
+.pro_compare td.tabletile {
+  text-align: center;
+  font-size: 18px;
+  line-height: 28px;
+  padding: 15px 10px;
+  color: {{ section.settings.txt-color }};
+  font-weight: 600;
+  background-color: {{ section.settings.bg-color }};
+}
+.sale_compare_section .tablelooprow td.forchics {
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+.sale_compare_section .tablelooprow td.forchics {
+  background: #fff;
+  color: #000;
+  text-align: center;
+}
+.pro_compare td.forchics {
+  width: 25%;
+}
+.sale_compare_section .compare-box td.forchics img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+.sale_compare_section td.tabletile.other_content {
+  background-color: #fff;
+  width: 25%;
+}
+.sale_compare_section td.tabletile.other_content img {
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+@media (max-width: 767px){
+  .pro_compare .com_left-side, .pro_compare .table_right_content, .pro_compare .table_content {
+    width: 100%;
+  }
+  .compare-box .com_left-side {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+  .com_left-side h2.com_heading {
+    font-size: 36px;
+    line-height: 41px;
+  }
+  .compare-box .com_right-side {
+    padding-left: 0;
+    width: 100%;
+  }
+  .sale_compare_section .com_left-side h2.com_heading, .sale_compare_section .compare-box .com_text p {
+    color: #2e2a39;
+  }
+} 
+  
+</style>
+
+
+
+{% schema %}
+{
+  "name": "Sale Compare",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "default": "Talk about your brand",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "other",
+      "default": "Others",
+      "label": "Other Title"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg-color",
+      "label": "Table Color",
+      "default": "#CCBDFF"
+    },
+    {
+      "type": "color",
+      "id": "txt-color",
+      "label": "Text Color",
+      "default": "#fff"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "heading",
+      "name": "Row",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "checkbox",
+          "id": "tick",
+          "label": "Enable Tick",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "cross",
+          "label": "Enable Cross",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sale Compare",
+      "blocks": [  ]
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,330 @@
+<script src="//bleame.com/cdn/shop/t/22/assets/gsap-latest-beta.min.js?v=146814637170536108891696514324" defer="defer"></script>
+<script src="//bleame.com/cdn/shop/t/22/assets/ScrollTrigger.min.js?v=113562400657109183961696514504" defer="defer"></script>
+<script src="//bleame.com/cdn/shop/t/22/assets/comparison-script.js?v=148498079004273740031696506224" defer="defer"></script>
+
+<section class="img-w-double-column comp-{{ section.id }}">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+    <div class="img-coumn-header">
+      <h2>{{ section.settings.title }}</h2>
+      <p>{{ section.settings.text }}</p>
+    </div>
+    {% endif %}
+
+    
+    <div class="img-coumn-body">
+      <div class="column-left">
+         {%- for block in section.blocks -%}
+          {% if block.type == 'column-left' %}
+            <div class="column-item">
+            {% if block.settings.icon != blank %}
+              <div class="column-icon">
+                <img src="{{ block.settings.icon | img_url: 'master' }}">
+              </div>
+            {% endif %}
+              <div class="column-content">             
+                <h4>{{ block.settings.title }}</h4>              
+                <p>{{ block.settings.content }}</p>        
+              </div>
+            </div>
+          {% endif %}
+         {%- endfor -%} 
+       </div>
+      
+      <div class="column-center">        
+          <div class="eating_center">
+            
+            <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px; inset: 0px; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 512px; height: 1024px; padding: 0px 0px 512px;">
+              <section class="comparisonSection" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 512px; width: 512px; max-height: 512px; height: 512px; padding: 0px 0px 288px; transform: translate(0px, 0px);">
+              
+                <div class="comparisonImage beforeImage">
+                  <img loading="lazy" src="{{ section.settings.before-img | img_url: 'original' }}" width="100%" height="100%" alt="before">
+                </div>
+                             
+                <div class="comparisonImage afterImage" style="translate: none; rotate: none; scale: none; transform: translate(100%, 0%);">
+                  <img loading="lazy" src="{{ section.settings.after-img | img_url: 'original' }}" width="100%" height="100%" alt="after" style="translate: none; rotate: none; scale: none; transform: translate(-100%, 0%);">
+                </div>
+             
+              </section>
+            </div>
+            
+          </div>        
+      </div>
+      
+      <div class="column-right">
+       {%- for block in section.blocks -%} 
+        {% if block.type == 'column-right' %}
+          <div class="column-item">    
+            {% if block.settings.icon != blank %}
+            <div class="column-icon">
+              <img src="{{ block.settings.icon | img_url: 'master' }}">
+            </div>		
+            {% endif %}
+            <div class="column-content">             
+              <h4>{{ block.settings.title }}</h4>              
+              <p>{{ block.settings.content }}</p>        
+            </div>
+          </div>
+        {% endif %}
+       {%- endfor -%} 
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+
+<style>
+.img-w-double-column{
+  padding: 50px 0;
+}
+.comp-{{ section.id }} .img-coumn-header h2 {
+  color: {{ section.settings.title_color }};
+}
+.img-coumn-header h2 {
+  font-size: 48px;
+  line-height: 1.33;
+  letter-spacing: 0;
+  text-transform: inherit;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 0;
+}
+.img-coumn-header p {
+  font-size: 21px;
+  line-height: 1.52;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.column-left, .column-right{
+  width: 25%;
+}
+.column-center{
+  width: 50%;
+}
+.img-coumn-body{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  column-gap: 30px;
+  row-gap: 30px;
+}
+.column-item {
+  display: flex;
+  margin-bottom: 70px;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+}
+.column-icon {
+  -ms-flex: 0 0 44px;
+  flex: 0 0 44px;
+  max-width: 44px;
+}
+.column-item img {
+  max-width: 60px;
+  display: block;
+  width: 100%;
+  height: 60px;
+  object-fit: cover;
+}
+.column-content h4 {
+  font-size: 19px;
+  margin-bottom: 8px;
+  margin-top: 0;
+}
+.column-item p {
+  margin: 0;
+}
+
+.eating_center {
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+  height: 500px;
+  margin: 20px auto;
+}  
+.pin-spacer {
+  height: 100% !important;
+  padding-bottom: 0px !important;
+}
+.comparisonSection {
+  position: relative !important;
+  padding-bottom: 56.25%;
+  top: 0px !important;
+  left: 0px !important;
+  max-height: initial !important;
+  height: 100% !important;
+  transform: translate(0px, 0px) !important;
+}
+.comparisonImage {
+  width: 100%;
+  height: 100%;
+}
+.comparisonImage img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  border-radius: 100%;
+}
+.afterImage {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  transform: translate(100%, 0px);
+  background-color: #fff;
+  border-left: 4px solid #fff;
+}
+
+
+@media only screen and (max-width: 991px){
+  .img-coumn-body{
+    column-gap: 0;
+    row-gap: 0;
+  }
+  .img-coumn-body .column-left {
+    width: 50%;
+    order: 2;
+    padding: 0 5px;
+  }
+  .img-coumn-body .column-center {
+    width: 100%;
+    height: auto;
+    order: 1;
+    max-width: 100%;
+  }
+  .img-coumn-body .column-right {
+    width: 50%;
+    order: 3;
+    padding: 0 5px;
+  }
+  .eating_center {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+  }
+}
+  
+@media (max-width: 767px){
+  .img-w-double-column{
+    padding: 30px 0 0;
+  }
+  .img-coumn-body{
+    flex-wrap: wrap;
+  }
+  .img-coumn-header h2 {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .img-coumn-header p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  .container {
+    max-width: 500px;
+    height: 330px;
+  }
+  .container .img {
+    background-size: 330px 100%;
+  }
+  .eating_center {
+    width: 230px !important;
+    height: 230px !important;
+    margin: 0 auto;
+  }
+  .comparisonSection {
+    max-width: 230px !important;
+    width: 230px !important;
+    height: 230px !important;
+    padding: 0px 0px 230px !important;
+  }
+}
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Image Comparison",
+    "settings": [
+     {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+     },
+     {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
+     },
+     {
+      "type": "image_picker",
+      "id": "before-img",
+      "label": "Before Image"
+     },
+     {
+      "type": "image_picker",
+      "id": "after-img",
+      "label": "After Image"
+     },
+     {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color"
+     }
+    ],
+    "blocks": [
+      {
+        "type": "column-left",
+        "name": "Left Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text"
+          }
+        ]
+      },
+      {
+        "type": "column-right",
+        "name": "Right Column",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Image Comparison"
+      }
+    ]
+  }
+{% endschema %}

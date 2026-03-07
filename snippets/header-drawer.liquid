@@ -1,0 +1,178 @@
+{% comment %}
+  Renders a header drawer menu for mobile and desktop.
+
+  Usage:
+  {% render 'header-drawer' %}
+{% endcomment %}
+
+<header-drawer data-breakpoint="{% if section.settings.menu_type_desktop == 'drawer' %}desktop{% else %}tablet{% endif %}">
+  <details id="Details-menu-drawer-container" class="menu-drawer-container">
+    <summary
+      class="header__icon header__icon--menu header__icon--summary link focus-inset"
+      aria-label="{{ 'sections.header.menu' | t }}"
+    >
+      <span>
+        {% render 'icon-hamburger' %}
+        {% render 'icon-close' %}
+      </span>
+    </summary>
+    <div id="menu-drawer" class="gradient menu-drawer motion-reduce color-{{ section.settings.menu_color_scheme }}">
+      <div class="menu-drawer__inner-container">
+        <div class="menu-drawer__navigation-container">
+          <nav class="menu-drawer__navigation">
+            
+            <div class="blocks">
+              {%- if section.settings.icon-1 != blank -%}
+              <div class="nav_img_text">
+                <div class="nav_img">
+                <img loading="lazy" src="{{ section.settings.icon-1 | img_url: 'original' }}">
+                </div>
+                <p>{{ section.settings.txt-1 }}</p>
+              </div>
+              {%- endif -%}
+            
+              {%- if section.settings.icon-2 != blank -%}
+              <div class="nav_img_text">
+                <div class="nav_img">
+                <img loading="lazy" src="{{ section.settings.icon-2 | img_url: 'original' }}">
+                </div>
+                <p>{{ section.settings.txt-2 }}</p>
+              </div>
+              {%- endif -%}
+            
+              {%- if section.settings.icon-3 != blank -%}
+              <div class="nav_img_text">
+                <div class="nav_img">
+                <img loading="lazy" src="{{ section.settings.icon-3 | img_url: 'original' }}">
+                </div>
+                <p>{{ section.settings.txt-3 }}</p>
+              </div>
+              {%- endif -%}
+            </div>
+            
+            <ul class="menu-drawer__menu list-menu" role="list">
+              {%- for block in section.blocks -%}
+                {%- case block.type -%}
+                  {%- when 'nav-link' -%}  
+                    {%- if block.settings.title != blank -%}
+                      <li class="menu-drawer__menu-item">   
+                        {%- if block.settings.image-1 != blank -%}
+                        <div class="menu_img">
+                          <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}">
+                        </div>
+                        {%- endif -%}
+                         <div class="title_with_text">
+                          <a href="{{ block.settings.link }}" class="test menu-drawer__menu-item list-menu__item link link--text focus-inset" aria-current="page">
+                            {{ block.settings.title }}
+                           </a>
+                           <p class="menu_text">{{ block.settings.text }}</p>    
+                         </div>
+                       </li>
+                    {%- endif -%}
+                {%- endcase -%}
+              {%- endfor -%}
+              
+            </ul>
+          </nav>
+          <div class="menu-drawer__utility-links">
+            <div class="menu-drawer__utility-links-wrap">
+              <a
+                href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
+                class="menu-drawer__account link focus-inset h5 medium-hide large-up-hide"
+              >
+                {% render 'icon-account' %}
+                {%- liquid
+                  if customer
+                    echo 'customer.account_fallback' | t
+                  else
+                    echo 'customer.log_in' | t
+                  endif
+                -%}
+              </a>
+
+            <ul class="list list-social list-unstyled" role="list">
+              {%- if settings.social_twitter_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_twitter_link }}" class="list-social__link link">
+                    {%- render 'icon-twitter' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_facebook_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_facebook_link }}" class="list-social__link link">
+                    {%- render 'icon-facebook' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_pinterest_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_pinterest_link }}" class="list-social__link link">
+                    {%- render 'icon-pinterest' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.pinterest' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_instagram_link }}" class="list-social__link link">
+                    {%- render 'icon-instagram' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_tiktok_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tiktok_link }}" class="list-social__link link">
+                    {%- render 'icon-tiktok' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.tiktok' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_tumblr_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_tumblr_link }}" class="list-social__link link">
+                    {%- render 'icon-tumblr' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.tumblr' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_snapchat_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_snapchat_link }}" class="list-social__link link">
+                    {%- render 'icon-snapchat' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.snapchat' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_youtube_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_youtube_link }}" class="list-social__link link">
+                    {%- render 'icon-youtube' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+              {%- if settings.social_vimeo_link != blank -%}
+                <li class="list-social__item">
+                  <a href="{{ settings.social_vimeo_link }}" class="list-social__link link">
+                    {%- render 'icon-vimeo' -%}
+                    <span class="visually-hidden">{{ 'general.social.links.vimeo' | t }}</span>
+                  </a>
+                </li>
+              {%- endif -%}
+            </ul>
+          </div>
+
+          {%- if section.settings.btm-txt != blank -%}
+          <div class="sfrom_text drawer_icon"><p>{{ section.settings.btm-txt }}</p></div>
+          {%- endif -%}
+            
+         </div>
+        </div>
+      </div>
+    </div>
+  </details>
+</header-drawer>
