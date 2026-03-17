@@ -573,25 +573,32 @@
     "164451a9-0f1f-4479-9109-ebc7c6e5542c": {
       "type": "faqs",
       "blocks": {
+        "faq_fCqdEV": {
+          "type": "faq",
+          "settings": {
+            "faq-ques": "Are these mints sugar-free?",
+            "faq-content": "<p>Yes! They’re <strong>sugar-free</strong>, making them a smarter alternative to sugary energy drinks.</p>"
+          }
+        },
         "8a01a5ba-a1ec-432a-9ab5-e8b7a7bb31a0": {
           "type": "faq",
           "settings": {
-            "faq-ques": "How long does Hair Density filler stay in place?",
-            "faq-content": "<p>provides up to 48 hours of coverage and is water-resistant and sweat-proof, so it stays in place until you wash it out with shampoo.<br/></p>"
+            "faq-ques": "How fast do the caffeine mints work?",
+            "faq-content": "<p>Most customers feel a noticeable boost in focus and alertness within <strong>5–10 minutes</strong> thanks to fast absorption.</p>"
           }
         },
         "4a43d308-0fc8-4462-9127-042d68fc8077": {
           "type": "faq",
           "settings": {
-            "faq-ques": "Will Hair Density filler rub off on my clothes or pillow?",
-            "faq-content": "<p>We always recommend using a moderate amount of hair filler powder for the best result that looks clean and is mess free. After applying the hair filler powder, allow it to dry for 3-4 minutes and then it won’t transfer onto your clothes, pillow, or hands. You can also apply any hair spray after for added protection</p>"
+            "faq-ques": "How much caffeine is in each mint?",
+            "faq-content": "<p>Each mint contains a measured dose of caffeine designed to give you a smooth energy boost without overwhelming jitters.</p>"
           }
         },
         "d37333f3-812c-4def-9afc-b41ea9840783": {
           "type": "faq",
           "settings": {
-            "faq-ques": "What if I’m not satisfied with the results?",
-            "faq-content": "<p>We’re confident you’ll love REGENESIS , but if you’re not fully satisfied, we offer a money-back guarantee. Just reach out to our customer service team!<br/><br/></p>"
+            "faq-ques": "Will I experience a crash later?",
+            "faq-content": "<p>Our formula is designed to provide <strong>clean, steady energy</strong> — many users report little to no crash compared to coffee or energy drinks.</p>"
           }
         },
         "52bfd24f-8f46-4a4a-a0a9-c33916419e47": {
@@ -603,6 +610,7 @@
         }
       },
       "block_order": [
+        "faq_fCqdEV",
         "8a01a5ba-a1ec-432a-9ab5-e8b7a7bb31a0",
         "4a43d308-0fc8-4462-9127-042d68fc8077",
         "d37333f3-812c-4def-9afc-b41ea9840783",
