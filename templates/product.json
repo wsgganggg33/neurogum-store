@@ -22,6 +22,12 @@
             "pro-subtitle": "Natural black"
           }
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
         "text_EFDcjF": {
           "type": "text",
           "disabled": true,
@@ -47,12 +53,6 @@
           "type": "description",
           "disabled": true,
           "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "dropdown"
-          }
         },
         "a134f827-c44e-4834-abbb-dea857d93816": {
           "type": "icon-with-text",
@@ -115,11 +115,11 @@
       "block_order": [
         "title",
         "4882410d-eb44-4444-9258-6624e44f6a87",
+        "variant_picker",
         "text_EFDcjF",
         "0018d287-cdf5-4517-af5c-6a7840052b0a",
         "buy_buttons",
         "af9f4454-06eb-434c-86ea-059b201ecec6",
-        "variant_picker",
         "a134f827-c44e-4834-abbb-dea857d93816",
         "29f02082-10d7-4a2d-ad99-f56582cc1504",
         "e31ec655-753c-48fd-80e7-8acaf40092f7",
