@@ -194,7 +194,7 @@
         "text": "",
         "button_txt": "",
         "button_link": "",
-        "colr-bg": "#000000",
+        "colr-bg": "#ffffff",
         "btn-color": "",
         "btn-txt-color": "",
         "icon": "#ffffff"
@@ -223,22 +223,22 @@
         "text_q3tT88": {
           "type": "text",
           "settings": {
-            "range": 51,
-            "text": "<p><strong>felt more alert within minutes </strong>Reported faster mental clarity and sharper concentration.</p>"
+            "range": 91,
+            "text": "<p><strong> Reported sharper focus and mental clarity</strong></p>"
           }
         },
         "text_JhkiBi": {
           "type": "text",
           "settings": {
-            "range": 50,
-            "text": ""
+            "range": 97,
+            "text": "<p><strong>Noticed improved alertness and productivity</strong></p>"
           }
         },
         "text_gQA8yC": {
           "type": "text",
           "settings": {
-            "range": 50,
-            "text": ""
+            "range": 87,
+            "text": "<p><strong>Felt a clean energy boost without jitters</strong></p>"
           }
         }
       },
@@ -253,8 +253,8 @@
         "text": "Designed for performance. Powered by peppermint.",
         "button_txt": "",
         "button_link": "",
-        "colr-bg": "",
-        "btn-color": "",
+        "colr-bg": "#ffffff",
+        "btn-color": "#006064",
         "btn-txt-color": "",
         "icon": "#ffffff"
       }
@@ -274,11 +274,11 @@
     },
     "image_banner_H9TggN": {
       "type": "image-banner",
-      "disabled": true,
       "name": "t:sections.image-banner.presets.name",
       "settings": {
+        "image": "shopify://shop_images/1_65572fcc-04e3-4a86-a563-327cfbe9bc92.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -359,7 +359,7 @@
         "heading_NDwYa8": {
           "type": "heading",
           "settings": {
-            "title": "Water Resistance",
+            "title": "Fast-Acting Formula",
             "tick": true,
             "cross": true
           }
@@ -367,7 +367,7 @@
         "heading_HjMPCT": {
           "type": "heading",
           "settings": {
-            "title": "Sweat Proof",
+            "title": "Sugar-Free",
             "tick": true,
             "cross": true
           }
@@ -375,7 +375,7 @@
         "heading_AnGH7W": {
           "type": "heading",
           "settings": {
-            "title": "Natural",
+            "title": "No Energy Crash",
             "tick": true,
             "cross": true
           }
@@ -397,10 +397,11 @@
       ],
       "name": "Sale Compare",
       "settings": {
-        "heading": "US Vs Them",
+        "heading": "Why Choose Neuro Energy?",
         "text": "",
+        "logo": "shopify://shop_images/image_2026-03-17_043334926.png",
         "other": "Others",
-        "bg-color": "#000000",
+        "bg-color": "#00bcd4",
         "txt-color": "#ffffff"
       }
     },
@@ -428,6 +429,7 @@
       ],
       "name": "t:sections.image-with-text.presets.name",
       "settings": {
+        "image": "shopify://shop_images/image_2026-03-17_043523944.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -447,56 +449,56 @@
         "above_review_dWENqK": {
           "type": "above_review",
           "settings": {
-            "review": "This product is excellent, and all my friends and family have tried it and think the same.",
+            "review": "These mints are perfect for long workdays. I feel focused without the usual caffeine crash.",
             "rating": 5
           }
         },
         "above_review_fHGkLL": {
           "type": "above_review",
           "settings": {
-            "review": "I gave it to my husband and he loveeed it.",
+            "review": "Super convenient and way better than carrying energy drinks around. Works fast!",
             "rating": 5
           }
         },
         "above_review_hWFQLJ": {
           "type": "above_review",
           "settings": {
-            "review": "I need to purchase a new one as my whole family has been using  it",
+            "review": "Helps me stay alert during study sessions. Clean energy, no jitters.",
             "rating": 5
           }
         },
         "above_review_jYdVf4": {
           "type": "above_review",
           "settings": {
-            "review": "I have been getting alot of compliments !!!",
+            "review": "was skeptical at first but it actually gives a noticeable boost within minutes",
             "rating": 5
           }
         },
         "above_review_fpwGm7": {
           "type": "above_review",
           "settings": {
-            "review": "I was skeptical but I got it because of their money back guarantee and I am GLAD I did",
+            "review": "Love that it’s sugar-free. Keeps me sharp without feeling heavy.",
             "rating": 5
           }
         },
         "below_review_Df7Ca9": {
           "type": "below_review",
           "settings": {
-            "b-review": "I don't need a hair transplant anymore",
+            "b-review": "Great for travel and meetings. Small, discreet, and effective",
             "b-rating": 5
           }
         },
         "below_review_PkRNPH": {
           "type": "below_review",
           "settings": {
-            "b-review": "makes me feel so confident and lavish",
+            "b-review": "I use one before workouts and it gives me just the right kick.",
             "b-rating": 5
           }
         },
         "below_review_eqAqrd": {
           "type": "below_review",
           "settings": {
-            "b-review": "ALOT OF GIRLS ARE TEXTING ME",
+            "b-review": "Finally something that doesn’t make me crash after an hour.",
             "b-rating": 5
           }
         },
