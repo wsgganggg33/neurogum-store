@@ -1,1 +1,637 @@
-{"sections":{"image_banner_bQV8qe":{"type":"image-banner","blocks":{"heading_9B6YzE":{"type":"heading","settings":{"heading":"<strong>#1 Online Store for Health & Wellness<\/strong>","heading_size":"h1"}},"text_qV6erP":{"type":"text","settings":{"text":"<strong>Bangladesh's NO.1 <\/strong>Store for Health & Wellness Supplements! Imported Products from U.S.A, U.K, Dubai & India","text_style":"body"}},"buttons_qNTGGJ":{"type":"buttons","settings":{"button_label_1":"SHOP NOW","button_link_1":"shopify:\/\/collections\/frontpage","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_9B6YzE","text_qV6erP","buttons_qNTGGJ"],"settings":{"image":"shopify:\/\/shop_images\/05.png","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"image_banner_9QiDQX":{"type":"image-banner","blocks":{"heading_gEEc9m":{"type":"heading","settings":{"heading":"<strong>Headache & Migraine Relief in just 10s<\/strong>","heading_size":"h1"}},"text_hYxyRC":{"type":"text","settings":{"text":"Zōk provides relief by stimulating the tympanic membrane, which activates the trigeminal nerve and a number of cranial nerves inside the head through inner-ear pressure modulation, thereby providing instant alleviation of pressure and tension inside the head, which are associated with the symptoms of headaches and migraines.","text_style":"body"}},"buttons_3w3Emh":{"type":"buttons","settings":{"button_label_1":"SHOP NOW","button_link_1":"shopify:\/\/products\/zok-immediate-headache-migraine-relief","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_gEEc9m","text_hYxyRC","buttons_3w3Emh"],"disabled":true,"settings":{"image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"accent-2","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"featured_collection_NiNKz4":{"type":"featured-collection","settings":{"title":"Featured collection","heading_size":"h1","description":"","show_description":false,"description_style":"body","collection":"frontpage","products_to_show":25,"columns_desktop":5,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":true,"color_scheme":"inverse","image_ratio":"adapt","image_shape":"default","show_secondary_image":false,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"image_banner_nHemED":{"type":"image-banner","blocks":{"heading_EqEpQn":{"type":"heading","disabled":true,"settings":{"heading":"Image banner","heading_size":"h1"}},"text_wjWVyE":{"type":"text","disabled":true,"settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"buttons_6NgAgb":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_EqEpQn","text_wjWVyE","buttons_6NgAgb"],"disabled":true,"settings":{"image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"scheme-f7762a29-500a-4df6-9e9e-c1832d994183","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"83b1eb0c-fa0c-4c43-83ee-f8b393265fd4":{"type":"multicolumn","blocks":{"template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-1":{"type":"column","settings":{"title":"Boosts your Energy & Focus","text":"","link_label":"","link":""}},"template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-2":{"type":"column","settings":{"title":"100% Vegan friendly","text":"","link_label":"","link":""}},"template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-3":{"type":"column","settings":{"title":"Enhances Oxygen Intake","text":"","link_label":"","link":""}},"b725b01a-01cb-4f5b-a92e-ee969b4f3c8f":{"type":"column","settings":{"title":"Reduces Stress & Clear your Mind","text":"","link_label":"","link":""}}},"block_order":["template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-1","template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-2","template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-3","b725b01a-01cb-4f5b-a92e-ee969b4f3c8f"],"disabled":true,"settings":{"title":"BOOST FOCUS & REDUCE STRESS","heading_size":"h2","image_width":"half","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"scheme-f7762a29-500a-4df6-9e9e-c1832d994183","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":20}},"image_banner_hp3FG8":{"type":"image-banner","blocks":{"heading_bRiExi":{"type":"heading","disabled":true,"settings":{"heading":"Image banner","heading_size":"h1"}},"text_AK4d4T":{"type":"text","disabled":true,"settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"buttons_RiMkEj":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_bRiExi","text_AK4d4T","buttons_RiMkEj"],"disabled":true,"settings":{"image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"scheme-f7762a29-500a-4df6-9e9e-c1832d994183","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"multicolumn_CRRpLE":{"type":"multicolumn","blocks":{"column_QVaWM9":{"type":"column","settings":{"title":"Instant Headache Relief","text":"","link_label":"","link":""}},"column_UaHp4n":{"type":"column","settings":{"title":"100% Vegan friendly","text":"","link_label":"","link":""}},"column_E6HwBF":{"type":"column","settings":{"title":"Takes 5 Minutes","text":"","link_label":"","link":""}},"column_VUycih":{"type":"column","settings":{"title":"Reduces Stress & Clear your Mind","text":"","link_label":"","link":""}}},"block_order":["column_QVaWM9","column_UaHp4n","column_E6HwBF","column_VUycih"],"disabled":true,"settings":{"title":"BOOST FOCUS & REDUCE STRESS","heading_size":"h2","image_width":"half","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"scheme-f7762a29-500a-4df6-9e9e-c1832d994183","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":20}},"6dc00cc1-bc8b-44eb-b4c2-c95315d4c415":{"type":"rich-text","blocks":{"template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-heading-1":{"type":"heading","disabled":true,"settings":{"heading":"<em><strong>“Unique Formulation and Effectiveness are Unparalleled         <\/strong><\/em>                                   We've been very familiar with Ark Drops for some time and have even purchased and compared it with other similar products on the market.Through this process, we've become even more convinced that there is truly nothing comparable to Ark Drops available.","heading_size":"h2"}},"template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-text-1":{"type":"text","disabled":true,"settings":{"text":"<p>DGARD AZZAM - <strong>Verified Buyer<\/strong><\/p>"}}},"block_order":["template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-heading-1","template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-text-1"],"disabled":true,"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"accent-1","full_width":true,"padding_top":88,"padding_bottom":52}},"featured_product_NqxWeq":{"type":"featured-product","blocks":{"text_EXApMq":{"type":"text","settings":{"text":"{{ section.settings.product.vendor }}","text_style":"uppercase"}},"title_LjUDfP":{"type":"title","settings":{"heading_size":"h1"}},"variant_picker_atFeVW":{"type":"variant_picker","settings":{"picker_type":"button"}},"buy_buttons_mDnQGq":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}}},"block_order":["text_EXApMq","title_LjUDfP","variant_picker_atFeVW","buy_buttons_mDnQGq"],"disabled":true,"settings":{"product":"ark-drops-breathe-focus-formula","color_scheme":"scheme-ff139b4e-047e-4df5-9570-1d04ea47527a","secondary_background":false,"media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","media_position":"left","image_zoom":"lightbox","hide_variants":false,"enable_video_looping":false,"padding_top":36,"padding_bottom":36}},"featured_product_7AMqCc":{"type":"featured-product","blocks":{"text_Tdrkzh":{"type":"text","settings":{"text":"{{ section.settings.product.vendor }}","text_style":"uppercase"}},"title_9zLFGN":{"type":"title","settings":{"heading_size":"h1"}},"price_zgrzNx":{"type":"price","settings":{}},"variant_picker_PEBQz3":{"type":"variant_picker","settings":{"picker_type":"button"}},"quantity_selector_LU7tyg":{"type":"quantity_selector","disabled":true,"settings":{}},"buy_buttons_DG3NXX":{"type":"buy_buttons","settings":{"show_dynamic_checkout":true,"show_gift_card_recipient":true}},"share_PUe4jq":{"type":"share","settings":{"share_label":"Share"}}},"block_order":["text_Tdrkzh","title_9zLFGN","price_zgrzNx","variant_picker_PEBQz3","quantity_selector_LU7tyg","buy_buttons_DG3NXX","share_PUe4jq"],"disabled":true,"settings":{"product":"zok-immediate-headache-migraine-relief","color_scheme":"scheme-ff139b4e-047e-4df5-9570-1d04ea47527a","secondary_background":false,"media_size":"medium","constrain_to_viewport":true,"media_fit":"contain","media_position":"left","image_zoom":"lightbox","hide_variants":false,"enable_video_looping":false,"padding_top":36,"padding_bottom":36}},"video_slider_with_text_fyGgDE":{"type":"video-slider-with-text","blocks":{"video_EFJerB":{"type":"video","settings":{"video_link":""}}},"block_order":["video_EFJerB"],"disabled":true,"settings":{"title":"what is ark drop","text":"","button_txt":"","button_link":"","colr-bg":"","btn-color":"","btn-txt-color":"","icon":"#ffffff"}},"sale_compare_txTKMm":{"type":"sale-compare","blocks":{"heading_iJwgF9":{"type":"heading","settings":{"title":"<strong>Boost energy<\/strong>","tick":true,"cross":true}},"heading_qKwfH4":{"type":"heading","settings":{"title":"<strong>100% Halal\/ Natural<\/strong>","tick":true,"cross":true}},"heading_3FAMCp":{"type":"heading","settings":{"title":"<strong>enhances focus<\/strong>","tick":true,"cross":true}},"heading_fHQ8wM":{"type":"heading","settings":{"title":"fast acting","tick":true,"cross":true}},"heading_rPCtY6":{"type":"heading","settings":{"title":"<strong>Addictive<\/strong>","tick":false,"cross":false}},"heading_9pqXa4":{"type":"heading","settings":{"title":"Side effects","tick":false,"cross":false}}},"block_order":["heading_iJwgF9","heading_qKwfH4","heading_3FAMCp","heading_fHQ8wM","heading_rPCtY6","heading_9pqXa4"],"disabled":true,"settings":{"heading":"<strong>Why Ark drops are the best natural booster ?<\/strong>","text":"","other":"Others","bg-color":"#848669","txt-color":"#ffffff"}},"17068708531fee5593":{"type":"apps","settings":{"include_margins":true}}},"order":["image_banner_bQV8qe","image_banner_9QiDQX","featured_collection_NiNKz4","image_banner_nHemED","83b1eb0c-fa0c-4c43-83ee-f8b393265fd4","image_banner_hp3FG8","multicolumn_CRRpLE","6dc00cc1-bc8b-44eb-b4c2-c95315d4c415","featured_product_NqxWeq","featured_product_7AMqCc","video_slider_with_text_fyGgDE","sale_compare_txTKMm","17068708531fee5593"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_bQV8qe": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_9B6YzE": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>#1 Online Store for Health & Wellness</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_qV6erP": {
+          "type": "text",
+          "settings": {
+            "text": "<strong>Bangladesh's NO.1 </strong>Store for Health & Wellness Supplements! Imported Products from U.S.A, U.K, Dubai & India",
+            "text_style": "body"
+          }
+        },
+        "buttons_qNTGGJ": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/frontpage",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_9B6YzE",
+        "text_qV6erP",
+        "buttons_qNTGGJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/2.webp",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_9QiDQX": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_gEEc9m": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Headache & Migraine Relief in just 10s</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "text_hYxyRC": {
+          "type": "text",
+          "settings": {
+            "text": "Zōk provides relief by stimulating the tympanic membrane, which activates the trigeminal nerve and a number of cranial nerves inside the head through inner-ear pressure modulation, thereby providing instant alleviation of pressure and tension inside the head, which are associated with the symptoms of headaches and migraines.",
+            "text_style": "body"
+          }
+        },
+        "buttons_3w3Emh": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://products/zok-immediate-headache-migraine-relief",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gEEc9m",
+        "text_hYxyRC",
+        "buttons_3w3Emh"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection_NiNKz4": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 25,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": true,
+        "color_scheme": "inverse",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner_nHemED": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_EqEpQn": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_wjWVyE": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_6NgAgb": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_EqEpQn",
+        "text_wjWVyE",
+        "buttons_6NgAgb"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-f7762a29-500a-4df6-9e9e-c1832d994183",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "83b1eb0c-fa0c-4c43-83ee-f8b393265fd4": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-1": {
+          "type": "column",
+          "settings": {
+            "title": "Boosts your Energy & Focus",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-2": {
+          "type": "column",
+          "settings": {
+            "title": "100% Vegan friendly",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-3": {
+          "type": "column",
+          "settings": {
+            "title": "Enhances Oxygen Intake",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "b725b01a-01cb-4f5b-a92e-ee969b4f3c8f": {
+          "type": "column",
+          "settings": {
+            "title": "Reduces Stress & Clear your Mind",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-1",
+        "template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-2",
+        "template--16887741087980__83b1eb0c-fa0c-4c43-83ee-f8b393265fd4-column-3",
+        "b725b01a-01cb-4f5b-a92e-ee969b4f3c8f"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "BOOST FOCUS & REDUCE STRESS",
+        "heading_size": "h2",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-f7762a29-500a-4df6-9e9e-c1832d994183",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "image_banner_hp3FG8": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bRiExi": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_AK4d4T": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_RiMkEj": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_bRiExi",
+        "text_AK4d4T",
+        "buttons_RiMkEj"
+      ],
+      "disabled": true,
+      "settings": {
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-f7762a29-500a-4df6-9e9e-c1832d994183",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn_CRRpLE": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_QVaWM9": {
+          "type": "column",
+          "settings": {
+            "title": "Instant Headache Relief",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UaHp4n": {
+          "type": "column",
+          "settings": {
+            "title": "100% Vegan friendly",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_E6HwBF": {
+          "type": "column",
+          "settings": {
+            "title": "Takes 5 Minutes",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_VUycih": {
+          "type": "column",
+          "settings": {
+            "title": "Reduces Stress & Clear your Mind",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_QVaWM9",
+        "column_UaHp4n",
+        "column_E6HwBF",
+        "column_VUycih"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "BOOST FOCUS & REDUCE STRESS",
+        "heading_size": "h2",
+        "image_width": "half",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-f7762a29-500a-4df6-9e9e-c1832d994183",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 20
+      }
+    },
+    "6dc00cc1-bc8b-44eb-b4c2-c95315d4c415": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-heading-1": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "<em><strong>“Unique Formulation and Effectiveness are Unparalleled         </strong></em>                                   We've been very familiar with Ark Drops for some time and have even purchased and compared it with other similar products on the market.Through this process, we've become even more convinced that there is truly nothing comparable to Ark Drops available.",
+            "heading_size": "h2"
+          }
+        },
+        "template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-text-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>DGARD AZZAM - <strong>Verified Buyer</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-heading-1",
+        "template--16887741087980__6dc00cc1-bc8b-44eb-b4c2-c95315d4c415-text-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 88,
+        "padding_bottom": 52
+      }
+    },
+    "featured_product_NqxWeq": {
+      "type": "featured-product",
+      "blocks": {
+        "text_EXApMq": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_LjUDfP": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "variant_picker_atFeVW": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "buy_buttons_mDnQGq": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        }
+      },
+      "block_order": [
+        "text_EXApMq",
+        "title_LjUDfP",
+        "variant_picker_atFeVW",
+        "buy_buttons_mDnQGq"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "ark-drops-breathe-focus-formula",
+        "color_scheme": "scheme-ff139b4e-047e-4df5-9570-1d04ea47527a",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_7AMqCc": {
+      "type": "featured-product",
+      "blocks": {
+        "text_Tdrkzh": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_9zLFGN": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_zgrzNx": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_PEBQz3": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector_LU7tyg": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons_DG3NXX": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_PUe4jq": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_Tdrkzh",
+        "title_9zLFGN",
+        "price_zgrzNx",
+        "variant_picker_PEBQz3",
+        "quantity_selector_LU7tyg",
+        "buy_buttons_DG3NXX",
+        "share_PUe4jq"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "zok-immediate-headache-migraine-relief",
+        "color_scheme": "scheme-ff139b4e-047e-4df5-9570-1d04ea47527a",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "video_slider_with_text_fyGgDE": {
+      "type": "video-slider-with-text",
+      "blocks": {
+        "video_EFJerB": {
+          "type": "video",
+          "settings": {
+            "video_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "video_EFJerB"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "what is ark drop",
+        "text": "",
+        "button_txt": "",
+        "button_link": "",
+        "colr-bg": "",
+        "btn-color": "",
+        "btn-txt-color": "",
+        "icon": "#ffffff"
+      }
+    },
+    "sale_compare_txTKMm": {
+      "type": "sale-compare",
+      "blocks": {
+        "heading_iJwgF9": {
+          "type": "heading",
+          "settings": {
+            "title": "<strong>Boost energy</strong>",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_qKwfH4": {
+          "type": "heading",
+          "settings": {
+            "title": "<strong>100% Halal/ Natural</strong>",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_3FAMCp": {
+          "type": "heading",
+          "settings": {
+            "title": "<strong>enhances focus</strong>",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_fHQ8wM": {
+          "type": "heading",
+          "settings": {
+            "title": "fast acting",
+            "tick": true,
+            "cross": true
+          }
+        },
+        "heading_rPCtY6": {
+          "type": "heading",
+          "settings": {
+            "title": "<strong>Addictive</strong>",
+            "tick": false,
+            "cross": false
+          }
+        },
+        "heading_9pqXa4": {
+          "type": "heading",
+          "settings": {
+            "title": "Side effects",
+            "tick": false,
+            "cross": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iJwgF9",
+        "heading_qKwfH4",
+        "heading_3FAMCp",
+        "heading_fHQ8wM",
+        "heading_rPCtY6",
+        "heading_9pqXa4"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<strong>Why Ark drops are the best natural booster ?</strong>",
+        "text": "",
+        "other": "Others",
+        "bg-color": "#848669",
+        "txt-color": "#ffffff"
+      }
+    },
+    "17068708531fee5593": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "image_banner_bQV8qe",
+    "image_banner_9QiDQX",
+    "featured_collection_NiNKz4",
+    "image_banner_nHemED",
+    "83b1eb0c-fa0c-4c43-83ee-f8b393265fd4",
+    "image_banner_hp3FG8",
+    "multicolumn_CRRpLE",
+    "6dc00cc1-bc8b-44eb-b4c2-c95315d4c415",
+    "featured_product_NqxWeq",
+    "featured_product_7AMqCc",
+    "video_slider_with_text_fyGgDE",
+    "sale_compare_txTKMm",
+    "17068708531fee5593"
+  ]
+}
